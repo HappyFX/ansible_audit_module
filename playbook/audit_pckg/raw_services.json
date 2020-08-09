@@ -1,0 +1,4796 @@
+{
+  "host_A": {
+    "sshd-keygen.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "sshd-keygen.service"
+    },
+    "systemd-machine-id-commit.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-machine-id-commit.service"
+    },
+    "openstack-dashboard.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-dashboard.service"
+    },
+    "iprinit.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "iprinit.service"
+    },
+    "systemd-readahead-collect.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-readahead-collect.service"
+    },
+    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_tmp.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_tmp.service"
+    },
+    "openstack-nova-console.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-console.service"
+    },
+    "mariadb@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "mariadb@.service"
+    },
+    "plymouth-kexec.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-kexec.service"
+    },
+    "dnsmasq.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dnsmasq.service"
+    },
+    "systemd-update-utmp-runlevel.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-update-utmp-runlevel.service"
+    },
+    "neutron-server.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-server.service"
+    },
+    "uwsgi.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "uwsgi.service"
+    },
+    "dracut-pre-mount.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-pre-mount.service"
+    },
+    "nfs-mountd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-mountd.service"
+    },
+    "rhsm-facts.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rhsm-facts.service"
+    },
+    "systemd-rfkill@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-rfkill@.service"
+    },
+    "systemd-random-seed.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-random-seed.service"
+    },
+    "saslauthd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "saslauthd.service"
+    },
+    "atd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "atd.service"
+    },
+    "cpupower.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "cpupower.service"
+    },
+    "rsyslog.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rsyslog.service"
+    },
+    "mariadb.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "mariadb.service"
+    },
+    "systemd-readahead-done.service": {
+      "status": "indirect",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-readahead-done.service"
+    },
+    "rpc-rquotad.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rpc-rquotad.service"
+    },
+    "ovs-delete-transient-ports.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "ovs-delete-transient-ports.service"
+    },
+    "systemd-shutdownd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-shutdownd.service"
+    },
+    "ipmievd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "ipmievd.service"
+    },
+    "plymouth-quit-wait.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-quit-wait.service"
+    },
+    "neutron-destroy-patch-ports.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-destroy-patch-ports.service"
+    },
+    "openstack-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-exporter.service"
+    },
+    "blk-availability.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "blk-availability.service"
+    },
+    "neutron-linuxbridge-agent.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-linuxbridge-agent.service"
+    },
+    "dbus.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "dbus.service"
+    },
+    "systemd-hostnamed.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-hostnamed.service"
+    },
+    "nfs-rquotad.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-rquotad.service"
+    },
+    "dracut-shutdown.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "dracut-shutdown.service"
+    },
+    "console-getty.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "console-getty.service"
+    },
+    "serial-getty@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "serial-getty@.service"
+    },
+    "haproxy.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "haproxy.service"
+    },
+    "arp-ethers.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "arp-ethers.service"
+    },
+    "systemd-localed.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-localed.service"
+    },
+    "epmd@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "epmd@.service"
+    },
+    "network.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "network.service"
+    },
+    "systemd-initctl.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-initctl.service"
+    },
+    "nfs-idmapd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-idmapd.service"
+    },
+    "nfs-config.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-config.service"
+    },
+    "openvswitch.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "openvswitch.service"
+    },
+    "systemd-sysctl.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-sysctl.service"
+    },
+    "fstrim.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "fstrim.service"
+    },
+    "target.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "target.service"
+    },
+    "nbd@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nbd@.service"
+    },
+    "oddjobd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "oddjobd.service"
+    },
+    "consul-server.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "consul-server.service"
+    },
+    "systemd-halt.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-halt.service"
+    },
+    "rdisc.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rdisc.service"
+    },
+    "systemd-kexec.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-kexec.service"
+    },
+    "firewalld.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "firewalld.service"
+    },
+    "getty@tty1.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "running",
+      "name": "getty@tty1.service"
+    },
+    "systemd-udev-settle.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-udev-settle.service"
+    },
+    "rabbitmq-server.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rabbitmq-server.service"
+    },
+    "auth-rpcgss-module.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "auth-rpcgss-module.service"
+    },
+    "nfs-idmap.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-idmap.service"
+    },
+    "rpcidmapd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rpcidmapd.service"
+    },
+    "rhel-dmesg.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-dmesg.service"
+    },
+    "tcsd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "tcsd.service"
+    },
+    "debug-shell.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "debug-shell.service"
+    },
+    "keystone-public.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "keystone-public.service"
+    },
+    "epmd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "epmd.service"
+    },
+    "brandbot.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "brandbot.service"
+    },
+    "messagebus.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "messagebus.service"
+    },
+    "neutron-l3-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-l3-agent.service"
+    },
+    "lvm2-lvmpolld.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "lvm2-lvmpolld.service"
+    },
+    "openstack-nova-consoleauth.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-consoleauth.service"
+    },
+    "rabbitmq-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rabbitmq-exporter.service"
+    },
+    "dracut-cmdline.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-cmdline.service"
+    },
+    "systemd-vconsole-setup.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-vconsole-setup.service"
+    },
+    "rsyncd@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rsyncd@.service"
+    },
+    "systemd-ask-password-plymouth.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-ask-password-plymouth.service"
+    },
+    "iscsiuio.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsiuio.service"
+    },
+    "lvm2-monitor.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "lvm2-monitor.service"
+    },
+    "initrd-switch-root.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "initrd-switch-root.service"
+    },
+    "neutron-linuxbridge-cleanup.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-linuxbridge-cleanup.service"
+    },
+    "rhel-autorelabel-mark.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-autorelabel-mark.service"
+    },
+    "unbound-anchor.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "unbound-anchor.service"
+    },
+    "zabbix-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "zabbix-agent.service"
+    },
+    "systemd-modules-load.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-modules-load.service"
+    },
+    "puppet.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "puppet.service"
+    },
+    "radvd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "radvd.service"
+    },
+    "nfs.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs.service"
+    },
+    "lvm2-pvscan@253:5.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "lvm2-pvscan@253:5.service"
+    },
+    "memcached.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "memcached.service"
+    },
+    "network": {
+      "status": "enabled",
+      "source": "sysv",
+      "state": "running",
+      "name": "network"
+    },
+    "iprdump.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "iprdump.service"
+    },
+    "openstack-cinder-api.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-cinder-api.service"
+    },
+    "lvm2-pvscan@253:4.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "lvm2-pvscan@253:4.service"
+    },
+    "dbus-org.freedesktop.timedate1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.timedate1.service"
+    },
+    "systemd-tmpfiles-clean.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-tmpfiles-clean.service"
+    },
+    "systemd-journal-catalog-update.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-journal-catalog-update.service"
+    },
+    "NetworkManager-wait-online.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "NetworkManager-wait-online.service"
+    },
+    "rescue.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rescue.service"
+    },
+    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_var.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_var.service"
+    },
+    "conntrackd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "conntrackd.service"
+    },
+    "dbus-org.freedesktop.import1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.import1.service"
+    },
+    "nova-placement.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "nova-placement.service"
+    },
+    "node-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "node-exporter.service"
+    },
+    "systemd-user-sessions.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-user-sessions.service"
+    },
+    "systemd-update-done.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-update-done.service"
+    },
+    "openstack-cinder-scheduler.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-cinder-scheduler.service"
+    },
+    "tuned.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "tuned.service"
+    },
+    "systemd-poweroff.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-poweroff.service"
+    },
+    "plymouth-start.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-start.service"
+    },
+    "corosync-notifyd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "corosync-notifyd.service"
+    },
+    "rdma-ndd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rdma-ndd.service"
+    },
+    "systemd-readahead-replay.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-readahead-replay.service"
+    },
+    "rpc-statd-notify.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rpc-statd-notify.service"
+    },
+    "plymouth-switch-root.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-switch-root.service"
+    },
+    "gssproxy.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "gssproxy.service"
+    },
+    "systemd-fsck-root.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-fsck-root.service"
+    },
+    "nfs-secure.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-secure.service"
+    },
+    "rhsm.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rhsm.service"
+    },
+    "rc-local.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rc-local.service"
+    },
+    "systemd-hwdb-update.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-hwdb-update.service"
+    },
+    "initrd-parse-etc.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "initrd-parse-etc.service"
+    },
+    "dbus-org.freedesktop.machine1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.machine1.service"
+    },
+    "httpd.service": {
+      "status": "masked",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "httpd.service"
+    },
+    "neutron-ovs-cleanup.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-ovs-cleanup.service"
+    },
+    "systemd-timedated.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-timedated.service"
+    },
+    "atopacct.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "atopacct.service"
+    },
+    "halt-local.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "halt-local.service"
+    },
+    "ipmi.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "ipmi.service"
+    },
+    "neutron-netns-cleanup.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-netns-cleanup.service"
+    },
+    "dracut-mount.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-mount.service"
+    },
+    "blackbox-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "blackbox-exporter.service"
+    },
+    "mysqld.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "mysqld.service"
+    },
+    "rsyncd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rsyncd.service"
+    },
+    "systemd-suspend.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-suspend.service"
+    },
+    "maxscale.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "maxscale.service"
+    },
+    "initrd-cleanup.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "initrd-cleanup.service"
+    },
+    "lvm2-pvscan@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "lvm2-pvscan@.service"
+    },
+    "dm-event.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "dm-event.service"
+    },
+    "rpcgssd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rpcgssd.service"
+    },
+    "selinux-policy-migrate-local-changes@targeted.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "selinux-policy-migrate-local-changes@targeted.service"
+    },
+    "neutron-openvswitch-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-openvswitch-agent.service"
+    },
+    "openstack-nova-api.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-api.service"
+    },
+    "getty@.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "getty@.service"
+    },
+    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_opt.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_opt.service"
+    },
+    "plymouth-halt.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-halt.service"
+    },
+    "iscsi.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsi.service"
+    },
+    "neutron-dhcp-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-dhcp-agent.service"
+    },
+    "systemd-journal-flush.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-journal-flush.service"
+    },
+    "netconsole.service": {
+      "status": "masked",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "netconsole.service"
+    },
+    "mysqld-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "mysqld-exporter.service"
+    },
+    "rdma.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rdma.service"
+    },
+    "systemd-machined.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-machined.service"
+    },
+    "systemd-backlight@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-backlight@.service"
+    },
+    "realmd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "realmd.service"
+    },
+    "ntpd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "ntpd.service"
+    },
+    "rdma-load-modules@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rdma-load-modules@.service"
+    },
+    "nfs-utils.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-utils.service"
+    },
+    "keystone-admin.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "keystone-admin.service"
+    },
+    "dbus-org.freedesktop.locale1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.locale1.service"
+    },
+    "keepalived.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "keepalived.service"
+    },
+    "systemd-reboot.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-reboot.service"
+    },
+    "puppetagent.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "puppetagent.service"
+    },
+    "openstack-cinder-volume.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-cinder-volume.service"
+    },
+    "dracut-initqueue.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-initqueue.service"
+    },
+    "systemd-udev-trigger.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-udev-trigger.service"
+    },
+    "systemd-ask-password-console.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-ask-password-console.service"
+    },
+    "systemd-logind.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "systemd-logind.service"
+    },
+    "openstack-glance-api.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-glance-api.service"
+    },
+    "*": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "*"
+    },
+    "nfs-lock.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-lock.service"
+    },
+    "ovsdb-server.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "ovsdb-server.service"
+    },
+    "plymouth-quit.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-quit.service"
+    },
+    "sshd@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "sshd@.service"
+    },
+    "console-shell.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "console-shell.service"
+    },
+    "openstack-glance-scrubber.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-glance-scrubber.service"
+    },
+    "rhel-autorelabel.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-autorelabel.service"
+    },
+    "systemd-update-utmp.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-update-utmp.service"
+    },
+    "systemd-importd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-importd.service"
+    },
+    "telegraf.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "telegraf.service"
+    },
+    "rhel-readonly.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-readonly.service"
+    },
+    "multipathd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "multipathd.service"
+    },
+    "dracut-pre-pivot.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-pre-pivot.service"
+    },
+    "systemd-ask-password-wall.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-ask-password-wall.service"
+    },
+    "epmd@0.0.0.0.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "running",
+      "name": "epmd@0.0.0.0.service"
+    },
+    "ntpdate.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "ntpdate.service"
+    },
+    "plymouth-read-write.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-read-write.service"
+    },
+    "rpc-statd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "rpc-statd.service"
+    },
+    "pcsd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "pcsd.service"
+    },
+    "lvm2-lvmetad.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "lvm2-lvmetad.service"
+    },
+    "cgred.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "cgred.service"
+    },
+    "rhsmcertd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rhsmcertd.service"
+    },
+    "iscsi-shutdown.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsi-shutdown.service"
+    },
+    "rpc-gssd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "rpc-gssd.service"
+    },
+    "systemd-nspawn@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-nspawn@.service"
+    },
+    "plymouth-reboot.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-reboot.service"
+    },
+    "systemd-tmpfiles-setup-dev.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-tmpfiles-setup-dev.service"
+    },
+    "autovt@.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "autovt@.service"
+    },
+    "libvirt-guests.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "libvirt-guests.service"
+    },
+    "rpcbind.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rpcbind.service"
+    },
+    "iprupdate.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "iprupdate.service"
+    },
+    "kmod-static-nodes.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "kmod-static-nodes.service"
+    },
+    "nfs-server.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-server.service"
+    },
+    "crond.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "crond.service"
+    },
+    "openstack-nova-os-compute-api.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-nova-os-compute-api.service"
+    },
+    "openstack-glance-registry.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-glance-registry.service"
+    },
+    "liagentd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "liagentd.service"
+    },
+    "container-getty@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "container-getty@.service"
+    },
+    "openstack-nova-scheduler.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-scheduler.service"
+    },
+    "initrd-udevadm-cleanup-db.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "initrd-udevadm-cleanup-db.service"
+    },
+    "NetworkManager.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "NetworkManager.service"
+    },
+    "polkit.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "polkit.service"
+    },
+    "prometheus-node-exporter-openstack.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "prometheus-node-exporter-openstack.service"
+    },
+    "ebtables.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "ebtables.service"
+    },
+    "rhel-loadmodules.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-loadmodules.service"
+    },
+    "dracut-pre-trigger.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-pre-trigger.service"
+    },
+    "systemd-hybrid-sleep.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-hybrid-sleep.service"
+    },
+    "rhel-import-state.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-import-state.service"
+    },
+    "openstack-nova-conductor.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-conductor.service"
+    },
+    "kdump.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "kdump.service"
+    },
+    "netconsole-nop.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "netconsole-nop.service"
+    },
+    "nginx.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "nginx.service"
+    },
+    "iops_poller.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "iops_poller.service"
+    },
+    "systemd-tmpfiles-setup.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-tmpfiles-setup.service"
+    },
+    "systemd-fsck@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-fsck@.service"
+    },
+    "openstack-nova-metadata-api.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-nova-metadata-api.service"
+    },
+    "liupdaterd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "liupdaterd.service"
+    },
+    "wpa_supplicant.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "wpa_supplicant.service"
+    },
+    "cgconfig.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "cgconfig.service"
+    },
+    "openstack-nova-xvpvncproxy.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-nova-xvpvncproxy.service"
+    },
+    "lldpad.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "lldpad.service"
+    },
+    "systemd-hibernate.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-hibernate.service"
+    },
+    "auditd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "auditd.service"
+    },
+    "ovs-vswitchd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "ovs-vswitchd.service"
+    },
+    "neutron-metadata-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-metadata-agent.service"
+    },
+    "sysstat.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "sysstat.service"
+    },
+    "systemd-hibernate-resume@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-hibernate-resume@.service"
+    },
+    "rhel-configure.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-configure.service"
+    },
+    "microcode.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "microcode.service"
+    },
+    "garb.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "garb.service"
+    },
+    "nbd-server.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nbd-server.service"
+    },
+    "nfslock.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfslock.service"
+    },
+    "plymouth-poweroff.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-poweroff.service"
+    },
+    "dracut-pre-udev.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-pre-udev.service"
+    },
+    "emergency.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "emergency.service"
+    },
+    "openstack-nova-novncproxy.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-novncproxy.service"
+    },
+    "crm_mon.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "crm_mon.service"
+    },
+    "pacemaker.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "pacemaker.service"
+    },
+    "htcacheclean.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "htcacheclean.service"
+    },
+    "quotaon.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "quotaon.service"
+    },
+    "systemd-binfmt.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-binfmt.service"
+    },
+    "certmonger.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "certmonger.service"
+    },
+    "systemd-readahead-drop.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-readahead-drop.service"
+    },
+    "NetworkManager-dispatcher.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "NetworkManager-dispatcher.service"
+    },
+    "nfs-blkmap.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-blkmap.service"
+    },
+    "autofs.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "autofs.service"
+    },
+    "systemd-udevd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "systemd-udevd.service"
+    },
+    "rhel-domainname.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-domainname.service"
+    },
+    "systemd-bootchart.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-bootchart.service"
+    },
+    "openstack-cinder-backup.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-cinder-backup.service"
+    },
+    "selinux-policy-migrate-local-changes@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "selinux-policy-migrate-local-changes@.service"
+    },
+    "lvm2-pvscan@253:1.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "lvm2-pvscan@253:1.service"
+    },
+    "atop.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "atop.service"
+    },
+    "dbus-org.freedesktop.login1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.login1.service"
+    },
+    "sshd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "sshd.service"
+    },
+    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_home.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_home.service"
+    },
+    "systemd-remount-fs.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-remount-fs.service"
+    },
+    "iscsid.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsid.service"
+    },
+    "mysql.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "mysql.service"
+    },
+    "systemd-journald.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "systemd-journald.service"
+    },
+    "systemd-quotacheck.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-quotacheck.service"
+    },
+    "dbus-org.freedesktop.hostname1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.hostname1.service"
+    },
+    "corosync.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "corosync.service"
+    },
+    "systemd-firstboot.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-firstboot.service"
+    },
+    "irqbalance.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "irqbalance.service"
+    }
+  },
+  "host_B": {
+    "openstack-nova-console.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-nova-console.service"
+    },
+    "systemd-machine-id-commit.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-machine-id-commit.service"
+    },
+    "openstack-dashboard.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-dashboard.service"
+    },
+    "iprinit.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "iprinit.service"
+    },
+    "systemd-readahead-collect.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-readahead-collect.service"
+    },
+    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_tmp.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_tmp.service"
+    },
+    "sshd-keygen.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "sshd-keygen.service"
+    },
+    "mariadb@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "mariadb@.service"
+    },
+    "plymouth-kexec.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-kexec.service"
+    },
+    "dnsmasq.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dnsmasq.service"
+    },
+    "neutron-server.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-server.service"
+    },
+    "uwsgi.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "uwsgi.service"
+    },
+    "dracut-pre-mount.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-pre-mount.service"
+    },
+    "nfs-mountd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-mountd.service"
+    },
+    "rhsm-facts.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rhsm-facts.service"
+    },
+    "systemd-rfkill@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-rfkill@.service"
+    },
+    "systemd-random-seed.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-random-seed.service"
+    },
+    "liagentd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "liagentd.service"
+    },
+    "atd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "atd.service"
+    },
+    "cpupower.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "cpupower.service"
+    },
+    "rsyslog.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rsyslog.service"
+    },
+    "mariadb.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "mariadb.service"
+    },
+    "systemd-readahead-done.service": {
+      "status": "indirect",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-readahead-done.service"
+    },
+    "rpc-rquotad.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rpc-rquotad.service"
+    },
+    "ovs-delete-transient-ports.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "ovs-delete-transient-ports.service"
+    },
+    "systemd-shutdownd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-shutdownd.service"
+    },
+    "ipmievd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "ipmievd.service"
+    },
+    "plymouth-quit-wait.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-quit-wait.service"
+    },
+    "neutron-destroy-patch-ports.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-destroy-patch-ports.service"
+    },
+    "blk-availability.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "blk-availability.service"
+    },
+    "neutron-linuxbridge-agent.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-linuxbridge-agent.service"
+    },
+    "dbus.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "dbus.service"
+    },
+    "systemd-hostnamed.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-hostnamed.service"
+    },
+    "nfs-rquotad.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-rquotad.service"
+    },
+    "dracut-shutdown.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "dracut-shutdown.service"
+    },
+    "console-getty.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "console-getty.service"
+    },
+    "serial-getty@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "serial-getty@.service"
+    },
+    "haproxy.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "haproxy.service"
+    },
+    "arp-ethers.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "arp-ethers.service"
+    },
+    "epmd@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "epmd@.service"
+    },
+    "network.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "network.service"
+    },
+    "systemd-initctl.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-initctl.service"
+    },
+    "nfs-idmapd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-idmapd.service"
+    },
+    "nfs-config.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-config.service"
+    },
+    "openvswitch.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "openvswitch.service"
+    },
+    "systemd-sysctl.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-sysctl.service"
+    },
+    "fstrim.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "fstrim.service"
+    },
+    "target.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "target.service"
+    },
+    "oddjobd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "oddjobd.service"
+    },
+    "consul-server.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "consul-server.service"
+    },
+    "systemd-halt.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-halt.service"
+    },
+    "rdisc.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rdisc.service"
+    },
+    "systemd-kexec.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-kexec.service"
+    },
+    "firewalld.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "firewalld.service"
+    },
+    "getty@tty1.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "running",
+      "name": "getty@tty1.service"
+    },
+    "systemd-udev-settle.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-udev-settle.service"
+    },
+    "rabbitmq-server.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rabbitmq-server.service"
+    },
+    "auth-rpcgss-module.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "auth-rpcgss-module.service"
+    },
+    "nfs-idmap.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-idmap.service"
+    },
+    "rpcidmapd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rpcidmapd.service"
+    },
+    "rhel-dmesg.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-dmesg.service"
+    },
+    "tcsd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "tcsd.service"
+    },
+    "debug-shell.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "debug-shell.service"
+    },
+    "rhsm.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rhsm.service"
+    },
+    "keystone-public.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "keystone-public.service"
+    },
+    "epmd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "epmd.service"
+    },
+    "brandbot.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "brandbot.service"
+    },
+    "messagebus.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "messagebus.service"
+    },
+    "neutron-l3-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-l3-agent.service"
+    },
+    "lvm2-lvmpolld.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "lvm2-lvmpolld.service"
+    },
+    "openstack-nova-consoleauth.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-consoleauth.service"
+    },
+    "rabbitmq-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rabbitmq-exporter.service"
+    },
+    "dracut-cmdline.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-cmdline.service"
+    },
+    "systemd-vconsole-setup.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-vconsole-setup.service"
+    },
+    "rsyncd@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rsyncd@.service"
+    },
+    "systemd-ask-password-plymouth.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-ask-password-plymouth.service"
+    },
+    "iscsiuio.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsiuio.service"
+    },
+    "lvm2-monitor.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "lvm2-monitor.service"
+    },
+    "prometheus-node-exporter-openstack.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "prometheus-node-exporter-openstack.service"
+    },
+    "initrd-switch-root.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "initrd-switch-root.service"
+    },
+    "neutron-linuxbridge-cleanup.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-linuxbridge-cleanup.service"
+    },
+    "rhel-autorelabel-mark.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-autorelabel-mark.service"
+    },
+    "unbound-anchor.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "unbound-anchor.service"
+    },
+    "zabbix-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "zabbix-agent.service"
+    },
+    "systemd-modules-load.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-modules-load.service"
+    },
+    "puppet.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "puppet.service"
+    },
+    "radvd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "radvd.service"
+    },
+    "nfs.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs.service"
+    },
+    "memcached.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "memcached.service"
+    },
+    "network": {
+      "status": "enabled",
+      "source": "sysv",
+      "state": "running",
+      "name": "network"
+    },
+    "iprdump.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "iprdump.service"
+    },
+    "openstack-cinder-api.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-cinder-api.service"
+    },
+    "systemd-update-utmp-runlevel.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-update-utmp-runlevel.service"
+    },
+    "dbus-org.freedesktop.timedate1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.timedate1.service"
+    },
+    "systemd-tmpfiles-clean.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-tmpfiles-clean.service"
+    },
+    "systemd-journal-catalog-update.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-journal-catalog-update.service"
+    },
+    "NetworkManager-wait-online.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "NetworkManager-wait-online.service"
+    },
+    "rescue.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rescue.service"
+    },
+    "openstack-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-exporter.service"
+    },
+    "conntrackd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "conntrackd.service"
+    },
+    "dbus-org.freedesktop.import1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.import1.service"
+    },
+    "nova-placement.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "nova-placement.service"
+    },
+    "node-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "node-exporter.service"
+    },
+    "systemd-user-sessions.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-user-sessions.service"
+    },
+    "systemd-update-done.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-update-done.service"
+    },
+    "openstack-cinder-scheduler.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-cinder-scheduler.service"
+    },
+    "tuned.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "tuned.service"
+    },
+    "systemd-poweroff.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-poweroff.service"
+    },
+    "plymouth-start.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-start.service"
+    },
+    "corosync-notifyd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "corosync-notifyd.service"
+    },
+    "rdma-ndd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rdma-ndd.service"
+    },
+    "systemd-readahead-replay.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-readahead-replay.service"
+    },
+    "rpc-statd-notify.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rpc-statd-notify.service"
+    },
+    "plymouth-switch-root.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-switch-root.service"
+    },
+    "gssproxy.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "gssproxy.service"
+    },
+    "systemd-fsck-root.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-fsck-root.service"
+    },
+    "pacemaker.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "pacemaker.service"
+    },
+    "nfs-secure.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-secure.service"
+    },
+    "openstack-nova-scheduler.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-scheduler.service"
+    },
+    "rc-local.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rc-local.service"
+    },
+    "systemd-hwdb-update.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-hwdb-update.service"
+    },
+    "initrd-parse-etc.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "initrd-parse-etc.service"
+    },
+    "dbus-org.freedesktop.machine1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.machine1.service"
+    },
+    "httpd.service": {
+      "status": "masked",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "httpd.service"
+    },
+    "neutron-ovs-cleanup.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-ovs-cleanup.service"
+    },
+    "systemd-timedated.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-timedated.service"
+    },
+    "atopacct.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "atopacct.service"
+    },
+    "halt-local.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "halt-local.service"
+    },
+    "ipmi.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "ipmi.service"
+    },
+    "neutron-netns-cleanup.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-netns-cleanup.service"
+    },
+    "dracut-mount.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-mount.service"
+    },
+    "blackbox-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "blackbox-exporter.service"
+    },
+    "mysqld.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "mysqld.service"
+    },
+    "rsyncd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rsyncd.service"
+    },
+    "systemd-suspend.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-suspend.service"
+    },
+    "initrd-cleanup.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "initrd-cleanup.service"
+    },
+    "lvm2-pvscan@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "lvm2-pvscan@.service"
+    },
+    "dm-event.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "dm-event.service"
+    },
+    "rpcgssd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rpcgssd.service"
+    },
+    "selinux-policy-migrate-local-changes@targeted.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "selinux-policy-migrate-local-changes@targeted.service"
+    },
+    "neutron-openvswitch-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-openvswitch-agent.service"
+    },
+    "openstack-nova-api.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-api.service"
+    },
+    "getty@.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "getty@.service"
+    },
+    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_opt.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_opt.service"
+    },
+    "plymouth-halt.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-halt.service"
+    },
+    "iscsi.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsi.service"
+    },
+    "neutron-dhcp-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-dhcp-agent.service"
+    },
+    "systemd-journal-flush.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-journal-flush.service"
+    },
+    "netconsole.service": {
+      "status": "masked",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "netconsole.service"
+    },
+    "rdma.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rdma.service"
+    },
+    "systemd-machined.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-machined.service"
+    },
+    "systemd-backlight@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-backlight@.service"
+    },
+    "realmd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "realmd.service"
+    },
+    "ntpd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "ntpd.service"
+    },
+    "rdma-load-modules@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rdma-load-modules@.service"
+    },
+    "nfs-utils.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-utils.service"
+    },
+    "keystone-admin.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "keystone-admin.service"
+    },
+    "dbus-org.freedesktop.locale1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.locale1.service"
+    },
+    "keepalived.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "keepalived.service"
+    },
+    "systemd-reboot.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-reboot.service"
+    },
+    "puppetagent.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "puppetagent.service"
+    },
+    "openstack-cinder-volume.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-cinder-volume.service"
+    },
+    "dracut-initqueue.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-initqueue.service"
+    },
+    "systemd-udev-trigger.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-udev-trigger.service"
+    },
+    "systemd-ask-password-console.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-ask-password-console.service"
+    },
+    "systemd-logind.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "systemd-logind.service"
+    },
+    "openstack-glance-api.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-glance-api.service"
+    },
+    "*": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "*"
+    },
+    "nfs-lock.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-lock.service"
+    },
+    "ovsdb-server.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "ovsdb-server.service"
+    },
+    "plymouth-quit.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-quit.service"
+    },
+    "sshd@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "sshd@.service"
+    },
+    "console-shell.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "console-shell.service"
+    },
+    "openstack-glance-scrubber.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-glance-scrubber.service"
+    },
+    "rhel-autorelabel.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-autorelabel.service"
+    },
+    "systemd-update-utmp.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-update-utmp.service"
+    },
+    "systemd-importd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-importd.service"
+    },
+    "telegraf.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "telegraf.service"
+    },
+    "rhel-readonly.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-readonly.service"
+    },
+    "multipathd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "multipathd.service"
+    },
+    "dracut-pre-pivot.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-pre-pivot.service"
+    },
+    "systemd-ask-password-wall.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-ask-password-wall.service"
+    },
+    "epmd@0.0.0.0.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "running",
+      "name": "epmd@0.0.0.0.service"
+    },
+    "ntpdate.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "ntpdate.service"
+    },
+    "plymouth-read-write.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-read-write.service"
+    },
+    "rpc-statd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "rpc-statd.service"
+    },
+    "pcsd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "pcsd.service"
+    },
+    "lvm2-lvmetad.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "lvm2-lvmetad.service"
+    },
+    "cgred.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "cgred.service"
+    },
+    "rhsmcertd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rhsmcertd.service"
+    },
+    "iscsi-shutdown.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsi-shutdown.service"
+    },
+    "rpc-gssd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "rpc-gssd.service"
+    },
+    "systemd-nspawn@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-nspawn@.service"
+    },
+    "plymouth-reboot.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-reboot.service"
+    },
+    "systemd-tmpfiles-setup-dev.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-tmpfiles-setup-dev.service"
+    },
+    "autovt@.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "autovt@.service"
+    },
+    "rpcbind.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rpcbind.service"
+    },
+    "iprupdate.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "iprupdate.service"
+    },
+    "kmod-static-nodes.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "kmod-static-nodes.service"
+    },
+    "nfs-server.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-server.service"
+    },
+    "crond.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "crond.service"
+    },
+    "openstack-nova-os-compute-api.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-nova-os-compute-api.service"
+    },
+    "openstack-glance-registry.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-glance-registry.service"
+    },
+    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_var.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_var.service"
+    },
+    "container-getty@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "container-getty@.service"
+    },
+    "mysqld-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "mysqld-exporter.service"
+    },
+    "initrd-udevadm-cleanup-db.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "initrd-udevadm-cleanup-db.service"
+    },
+    "NetworkManager.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "NetworkManager.service"
+    },
+    "polkit.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "polkit.service"
+    },
+    "maxscale.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "maxscale.service"
+    },
+    "ebtables.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "ebtables.service"
+    },
+    "rhel-loadmodules.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-loadmodules.service"
+    },
+    "dracut-pre-trigger.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-pre-trigger.service"
+    },
+    "systemd-hybrid-sleep.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-hybrid-sleep.service"
+    },
+    "rhel-import-state.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-import-state.service"
+    },
+    "openstack-nova-conductor.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-conductor.service"
+    },
+    "kdump.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "kdump.service"
+    },
+    "netconsole-nop.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "netconsole-nop.service"
+    },
+    "nginx.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "nginx.service"
+    },
+    "systemd-tmpfiles-setup.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-tmpfiles-setup.service"
+    },
+    "systemd-fsck@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-fsck@.service"
+    },
+    "openstack-nova-metadata-api.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-nova-metadata-api.service"
+    },
+    "liupdaterd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "liupdaterd.service"
+    },
+    "wpa_supplicant.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "wpa_supplicant.service"
+    },
+    "cgconfig.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "cgconfig.service"
+    },
+    "openstack-nova-xvpvncproxy.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-nova-xvpvncproxy.service"
+    },
+    "lldpad.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "lldpad.service"
+    },
+    "systemd-hibernate.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-hibernate.service"
+    },
+    "auditd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "auditd.service"
+    },
+    "ovs-vswitchd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "ovs-vswitchd.service"
+    },
+    "neutron-metadata-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-metadata-agent.service"
+    },
+    "sysstat.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "sysstat.service"
+    },
+    "systemd-hibernate-resume@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-hibernate-resume@.service"
+    },
+    "rhel-configure.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-configure.service"
+    },
+    "microcode.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "microcode.service"
+    },
+    "garb.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "garb.service"
+    },
+    "systemd-localed.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-localed.service"
+    },
+    "nfslock.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfslock.service"
+    },
+    "plymouth-poweroff.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-poweroff.service"
+    },
+    "dracut-pre-udev.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dracut-pre-udev.service"
+    },
+    "emergency.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "emergency.service"
+    },
+    "openstack-nova-novncproxy.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-novncproxy.service"
+    },
+    "crm_mon.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "crm_mon.service"
+    },
+    "lvm2-pvscan@253:2.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "lvm2-pvscan@253:2.service"
+    },
+    "htcacheclean.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "htcacheclean.service"
+    },
+    "quotaon.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "quotaon.service"
+    },
+    "systemd-binfmt.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-binfmt.service"
+    },
+    "certmonger.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "certmonger.service"
+    },
+    "systemd-readahead-drop.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-readahead-drop.service"
+    },
+    "NetworkManager-dispatcher.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "NetworkManager-dispatcher.service"
+    },
+    "nfs-blkmap.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-blkmap.service"
+    },
+    "autofs.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "autofs.service"
+    },
+    "systemd-udevd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "systemd-udevd.service"
+    },
+    "rhel-domainname.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-domainname.service"
+    },
+    "systemd-bootchart.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-bootchart.service"
+    },
+    "openstack-cinder-backup.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-cinder-backup.service"
+    },
+    "selinux-policy-migrate-local-changes@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "selinux-policy-migrate-local-changes@.service"
+    },
+    "atop.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "atop.service"
+    },
+    "dbus-org.freedesktop.login1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.login1.service"
+    },
+    "sshd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "sshd.service"
+    },
+    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_home.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_home.service"
+    },
+    "systemd-remount-fs.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-remount-fs.service"
+    },
+    "iscsid.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsid.service"
+    },
+    "mysql.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "mysql.service"
+    },
+    "systemd-journald.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "systemd-journald.service"
+    },
+    "systemd-quotacheck.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-quotacheck.service"
+    },
+    "dbus-org.freedesktop.hostname1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.hostname1.service"
+    },
+    "corosync.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "corosync.service"
+    },
+    "systemd-firstboot.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-firstboot.service"
+    },
+    "irqbalance.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "irqbalance.service"
+    }
+  },
+  "host_C": {
+    "openstack-nova-console.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-nova-console.service"
+    },
+    "systemd-machine-id-commit.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-machine-id-commit.service"
+    },
+    "iprinit.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "iprinit.service"
+    },
+    "systemd-readahead-collect.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-readahead-collect.service"
+    },
+    "systemd-nspawn@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-nspawn@.service"
+    },
+    "sshd-keygen.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "sshd-keygen.service"
+    },
+    "mariadb@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "mariadb@.service"
+    },
+    "plymouth-kexec.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-kexec.service"
+    },
+    "systemd-networkd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-networkd.service"
+    },
+    "systemd-update-utmp-runlevel.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-update-utmp-runlevel.service"
+    },
+    "neutron-server.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-server.service"
+    },
+    "uwsgi.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "uwsgi.service"
+    },
+    "dracut-pre-mount.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "dracut-pre-mount.service"
+    },
+    "nfs-mountd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-mountd.service"
+    },
+    "systemd-random-seed.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-random-seed.service"
+    },
+    "gssproxy.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "gssproxy.service"
+    },
+    "saslauthd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "saslauthd.service"
+    },
+    "cpupower.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "cpupower.service"
+    },
+    "mariadb.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "mariadb.service"
+    },
+    "systemd-readahead-done.service": {
+      "status": "indirect",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-readahead-done.service"
+    },
+    "rpc-rquotad.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rpc-rquotad.service"
+    },
+    "ovs-delete-transient-ports.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "ovs-delete-transient-ports.service"
+    },
+    "systemd-shutdownd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-shutdownd.service"
+    },
+    "openstack-glance-api.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-glance-api.service"
+    },
+    "neutron-destroy-patch-ports.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-destroy-patch-ports.service"
+    },
+    "blk-availability.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "blk-availability.service"
+    },
+    "neutron-linuxbridge-agent.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-linuxbridge-agent.service"
+    },
+    "netconsole.service": {
+      "status": "masked",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "netconsole.service"
+    },
+    "emergency.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "emergency.service"
+    },
+    "nfs-rquotad.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-rquotad.service"
+    },
+    "chrony-wait.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "chrony-wait.service"
+    },
+    "dracut-shutdown.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "dracut-shutdown.service"
+    },
+    "initrd-udevadm-cleanup-db.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "initrd-udevadm-cleanup-db.service"
+    },
+    "serial-getty@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "serial-getty@.service"
+    },
+    "rpcbind.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rpcbind.service"
+    },
+    "arp-ethers.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "arp-ethers.service"
+    },
+    "epmd@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "epmd@.service"
+    },
+    "network.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "network.service"
+    },
+    "systemd-initctl.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-initctl.service"
+    },
+    "getty@.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "getty@.service"
+    },
+    "openvswitch.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "openvswitch.service"
+    },
+    "rdma-load-modules@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rdma-load-modules@.service"
+    },
+    "fstrim.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "fstrim.service"
+    },
+    "target.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "target.service"
+    },
+    "mysql.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "mysql.service"
+    },
+    "systemd-halt.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-halt.service"
+    },
+    "chrony-dnssrv@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "chrony-dnssrv@.service"
+    },
+    "rdisc.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rdisc.service"
+    },
+    "systemd-kexec.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-kexec.service"
+    },
+    "firewalld.service": {
+      "status": "masked",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "firewalld.service"
+    },
+    "getty@tty1.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "running",
+      "name": "getty@tty1.service"
+    },
+    "rabbitmq-server.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rabbitmq-server.service"
+    },
+    "auth-rpcgss-module.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "auth-rpcgss-module.service"
+    },
+    "nfs-idmap.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-idmap.service"
+    },
+    "rpcidmapd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rpcidmapd.service"
+    },
+    "rhel-dmesg.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-dmesg.service"
+    },
+    "tcsd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "tcsd.service"
+    },
+    "regen_ovs.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "regen_ovs.service"
+    },
+    "keystone-public.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "keystone-public.service"
+    },
+    "epmd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "epmd.service"
+    },
+    "brandbot.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "brandbot.service"
+    },
+    "messagebus.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "messagebus.service"
+    },
+    "lvm2-lvmpolld.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "lvm2-lvmpolld.service"
+    },
+    "openstack-nova-consoleauth.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-consoleauth.service"
+    },
+    "rabbitmq-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rabbitmq-exporter.service"
+    },
+    "dracut-cmdline.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "dracut-cmdline.service"
+    },
+    "systemd-vconsole-setup.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-vconsole-setup.service"
+    },
+    "rsyncd@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rsyncd@.service"
+    },
+    "systemd-ask-password-console.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-ask-password-console.service"
+    },
+    "iscsiuio.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsiuio.service"
+    },
+    "lvm2-monitor.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "lvm2-monitor.service"
+    },
+    "initrd-switch-root.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "initrd-switch-root.service"
+    },
+    "neutron-linuxbridge-cleanup.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-linuxbridge-cleanup.service"
+    },
+    "pcsd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "pcsd.service"
+    },
+    "unbound-anchor.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "unbound-anchor.service"
+    },
+    "systemd-modules-load.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-modules-load.service"
+    },
+    "radvd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "radvd.service"
+    },
+    "nfs.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs.service"
+    },
+    "memcached.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "memcached.service"
+    },
+    "network": {
+      "status": "enabled",
+      "source": "sysv",
+      "state": "running",
+      "name": "network"
+    },
+    "iprdump.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "iprdump.service"
+    },
+    "openstack-cinder-api.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-cinder-api.service"
+    },
+    "crm_mon.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "crm_mon.service"
+    },
+    "systemd-tmpfiles-clean.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-tmpfiles-clean.service"
+    },
+    "systemd-journal-catalog-update.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-journal-catalog-update.service"
+    },
+    "rsyslog.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rsyslog.service"
+    },
+    "rescue.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rescue.service"
+    },
+    "openstack-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-exporter.service"
+    },
+    "conntrackd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "conntrackd.service"
+    },
+    "dbus-org.freedesktop.import1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.import1.service"
+    },
+    "nova-placement.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "nova-placement.service"
+    },
+    "node-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "node-exporter.service"
+    },
+    "systemd-update-done.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-update-done.service"
+    },
+    "openstack-cinder-scheduler.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-cinder-scheduler.service"
+    },
+    "tuned.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "tuned.service"
+    },
+    "lldpd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "lldpd.service"
+    },
+    "systemd-poweroff.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-poweroff.service"
+    },
+    "plymouth-start.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-start.service"
+    },
+    "corosync-notifyd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "corosync-notifyd.service"
+    },
+    "rdma-ndd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rdma-ndd.service"
+    },
+    "dbus-org.freedesktop.timedate1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.timedate1.service"
+    },
+    "rpc-statd-notify.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rpc-statd-notify.service"
+    },
+    "plymouth-switch-root.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-switch-root.service"
+    },
+    "mysqld-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "mysqld-exporter.service"
+    },
+    "dracut-pre-udev.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "dracut-pre-udev.service"
+    },
+    "nfs-secure.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-secure.service"
+    },
+    "debug-shell.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "debug-shell.service"
+    },
+    "systemd-hwdb-update.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-hwdb-update.service"
+    },
+    "initrd-parse-etc.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "initrd-parse-etc.service"
+    },
+    "dbus-org.freedesktop.machine1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.machine1.service"
+    },
+    "neutron-ovs-cleanup.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-ovs-cleanup.service"
+    },
+    "dracut-pre-pivot.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "dracut-pre-pivot.service"
+    },
+    "halt-local.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "halt-local.service"
+    },
+    "systemd-rfkill@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-rfkill@.service"
+    },
+    "neutron-netns-cleanup.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "neutron-netns-cleanup.service"
+    },
+    "dbus-org.fedoraproject.FirewallD1.service": {
+      "status": "masked",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.fedoraproject.FirewallD1.service"
+    },
+    "blackbox-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "blackbox-exporter.service"
+    },
+    "mysqld.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "mysqld.service"
+    },
+    "selinux-policy-migrate-local-changes@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "selinux-policy-migrate-local-changes@.service"
+    },
+    "rsyncd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rsyncd.service"
+    },
+    "systemd-suspend.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-suspend.service"
+    },
+    "initrd-cleanup.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "initrd-cleanup.service"
+    },
+    "lvm2-pvscan@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "lvm2-pvscan@.service"
+    },
+    "dm-event.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "dm-event.service"
+    },
+    "rpcgssd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "rpcgssd.service"
+    },
+    "openstack-dashboard.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-dashboard.service"
+    },
+    "neutron-openvswitch-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-openvswitch-agent.service"
+    },
+    "openstack-nova-api.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-api.service"
+    },
+    "neutron-l3-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-l3-agent.service"
+    },
+    "nfs-config.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-config.service"
+    },
+    "plymouth-halt.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-halt.service"
+    },
+    "iscsi.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsi.service"
+    },
+    "neutron-dhcp-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-dhcp-agent.service"
+    },
+    "ebtables.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "ebtables.service"
+    },
+    "systemd-journal-flush.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-journal-flush.service"
+    },
+    "dbus.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "dbus.service"
+    },
+    "systemd-machined.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-machined.service"
+    },
+    "systemd-sysctl.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-sysctl.service"
+    },
+    "systemd-networkd-wait-online.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-networkd-wait-online.service"
+    },
+    "systemd-udev-settle.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-udev-settle.service"
+    },
+    "nfs-utils.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-utils.service"
+    },
+    "systemd-firstboot.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-firstboot.service"
+    },
+    "keystone-admin.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "keystone-admin.service"
+    },
+    "dbus-org.freedesktop.locale1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.locale1.service"
+    },
+    "haproxy.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "haproxy.service"
+    },
+    "systemd-reboot.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-reboot.service"
+    },
+    "teamd@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "teamd@.service"
+    },
+    "iscsi-onboot.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsi-onboot.service"
+    },
+    "systemd-udev-trigger.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-udev-trigger.service"
+    },
+    "systemd-ask-password-plymouth.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-ask-password-plymouth.service"
+    },
+    "systemd-logind.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "systemd-logind.service"
+    },
+    "plymouth-quit-wait.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-quit-wait.service"
+    },
+    "*": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "*"
+    },
+    "nfs-lock.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-lock.service"
+    },
+    "ovsdb-server.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "ovsdb-server.service"
+    },
+    "plymouth-quit.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-quit.service"
+    },
+    "keepalived.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "keepalived.service"
+    },
+    "sshd@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "sshd@.service"
+    },
+    "console-shell.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "console-shell.service"
+    },
+    "openstack-glance-scrubber.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-glance-scrubber.service"
+    },
+    "rhel-autorelabel.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-autorelabel.service"
+    },
+    "systemd-update-utmp.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-update-utmp.service"
+    },
+    "systemd-importd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-importd.service"
+    },
+    "rhel-readonly.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-readonly.service"
+    },
+    "multipathd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "multipathd.service"
+    },
+    "systemd-timedated.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-timedated.service"
+    },
+    "systemd-ask-password-wall.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-ask-password-wall.service"
+    },
+    "epmd@0.0.0.0.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "running",
+      "name": "epmd@0.0.0.0.service"
+    },
+    "auditd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "auditd.service"
+    },
+    "plymouth-read-write.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-read-write.service"
+    },
+    "rpc-statd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "rpc-statd.service"
+    },
+    "rhel-domainname.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-domainname.service"
+    },
+    "lvm2-lvmetad.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "lvm2-lvmetad.service"
+    },
+    "iscsi-shutdown.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsi-shutdown.service"
+    },
+    "dracut-mount.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "dracut-mount.service"
+    },
+    "systemd-user-sessions.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-user-sessions.service"
+    },
+    "plymouth-reboot.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-reboot.service"
+    },
+    "systemd-tmpfiles-setup-dev.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-tmpfiles-setup-dev.service"
+    },
+    "autovt@.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "autovt@.service"
+    },
+    "nfs-idmapd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-idmapd.service"
+    },
+    "iprupdate.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "iprupdate.service"
+    },
+    "kmod-static-nodes.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "kmod-static-nodes.service"
+    },
+    "nfs-server.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-server.service"
+    },
+    "crond.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "crond.service"
+    },
+    "openstack-nova-os-compute-api.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-nova-os-compute-api.service"
+    },
+    "openstack-glance-registry.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-glance-registry.service"
+    },
+    "maxscale.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "maxscale.service"
+    },
+    "rpc-gssd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rpc-gssd.service"
+    },
+    "systemd-hostnamed.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-hostnamed.service"
+    },
+    "openstack-nova-scheduler.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-scheduler.service"
+    },
+    "console-getty.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "console-getty.service"
+    },
+    "rc-local.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rc-local.service"
+    },
+    "polkit.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "polkit.service"
+    },
+    "selinux-policy-migrate-local-changes@targeted.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "selinux-policy-migrate-local-changes@targeted.service"
+    },
+    "chronyd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "chronyd.service"
+    },
+    "httpd.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "httpd.service"
+    },
+    "container-getty@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "container-getty@.service"
+    },
+    "systemd-fsck-root.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-fsck-root.service"
+    },
+    "systemd-hybrid-sleep.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-hybrid-sleep.service"
+    },
+    "rhel-import-state.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-import-state.service"
+    },
+    "openstack-nova-conductor.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-conductor.service"
+    },
+    "kdump.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "kdump.service"
+    },
+    "netconsole-nop.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "netconsole-nop.service"
+    },
+    "nginx.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "nginx.service"
+    },
+    "systemd-tmpfiles-setup.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-tmpfiles-setup.service"
+    },
+    "dbus-org.freedesktop.network1.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.network1.service"
+    },
+    "systemd-fsck@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-fsck@.service"
+    },
+    "openstack-nova-metadata-api.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-nova-metadata-api.service"
+    },
+    "wpa_supplicant.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "wpa_supplicant.service"
+    },
+    "dnsmasq.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dnsmasq.service"
+    },
+    "openstack-nova-xvpvncproxy.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-nova-xvpvncproxy.service"
+    },
+    "dracut-pre-trigger.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "dracut-pre-trigger.service"
+    },
+    "systemd-hibernate.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-hibernate.service"
+    },
+    "ovs-vswitchd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "ovs-vswitchd.service"
+    },
+    "neutron-metadata-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-metadata-agent.service"
+    },
+    "systemd-hibernate-resume@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-hibernate-resume@.service"
+    },
+    "rhel-configure.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-configure.service"
+    },
+    "microcode.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "microcode.service"
+    },
+    "garb.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "garb.service"
+    },
+    "systemd-localed.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-localed.service"
+    },
+    "nfslock.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfslock.service"
+    },
+    "plymouth-poweroff.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "plymouth-poweroff.service"
+    },
+    "openstack-nova-novncproxy.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-novncproxy.service"
+    },
+    "postfix.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "postfix.service"
+    },
+    "pacemaker.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "pacemaker.service"
+    },
+    "htcacheclean.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "htcacheclean.service"
+    },
+    "quotaon.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "quotaon.service"
+    },
+    "systemd-backlight@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-backlight@.service"
+    },
+    "systemd-binfmt.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-binfmt.service"
+    },
+    "systemd-readahead-drop.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-readahead-drop.service"
+    },
+    "rdma.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rdma.service"
+    },
+    "nfs-blkmap.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs-blkmap.service"
+    },
+    "systemd-udevd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "systemd-udevd.service"
+    },
+    "systemd-readahead-replay.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-readahead-replay.service"
+    },
+    "rhel-loadmodules.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-loadmodules.service"
+    },
+    "systemd-bootchart.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-bootchart.service"
+    },
+    "openstack-cinder-backup.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-cinder-backup.service"
+    },
+    "prometheus-node-exporter-openstack.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "prometheus-node-exporter-openstack.service"
+    },
+    "dbus-org.freedesktop.login1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.login1.service"
+    },
+    "rhel-autorelabel-mark.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-autorelabel-mark.service"
+    },
+    "sshd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "sshd.service"
+    },
+    "lvm2-pvscan@253:2.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "lvm2-pvscan@253:2.service"
+    },
+    "systemd-remount-fs.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-remount-fs.service"
+    },
+    "iscsid.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsid.service"
+    },
+    "openstack-cinder-volume.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-cinder-volume.service"
+    },
+    "systemd-journald.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "systemd-journald.service"
+    },
+    "systemd-quotacheck.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-quotacheck.service"
+    },
+    "dbus-org.freedesktop.hostname1.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.hostname1.service"
+    },
+    "corosync.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "corosync.service"
+    },
+    "dracut-initqueue.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "dracut-initqueue.service"
+    },
+    "irqbalance.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "irqbalance.service"
+    }
+  }
+}

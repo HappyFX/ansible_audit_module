@@ -11,16 +11,20 @@
 
   - name: set global var
     set_fact:
-      total: "{{ total | default ({}) | combine( { item: {'packages': hostvars[item].ansible_facts.packages, 'services': hostvars[item].ansible_facts.services, 'system': {hostvars[item].ansible_distribution: hostvars[item].ansible_distribution_version} } } ) }}"
+      my_services: "{{ my_services | default ({}) | combine( { item: hostvars[item].ansible_facts.services} ) }}"
+      my_packages: "{{ my_packages | default ({}) | combine( { item: hostvars[item].ansible_facts.packages} ) }}"
+      my_system: "{{ my_system | default ({}) | combine( { item: {hostvars[item].ansible_distribution: hostvars[item].ansible_distribution_version} }) }}"
     delegate_to: localhost
     run_once: True
     loop: "{{ ansible_play_hosts }}"
 
   - name: compare facts
     compare_facts:
-      data: "{{ total }}"
-      dest_raw: "{{ playbook_dir }}/raw.json"
-      dest_result: "{{ playbook_dir }}/total.json"
+      services: "{{ my_services }}"
+      packages: "{{ my_packages }}"
+      system: "{{ my_system }}"
+      dest_raw: "{{ playbook_dir }}"
+      dest_result: "{{ playbook_dir }}"
     register: compared_result
     delegate_to: localhost
     run_once: True

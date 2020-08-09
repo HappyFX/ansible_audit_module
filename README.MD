@@ -41,9 +41,11 @@ Output of module is dict
 ```yml
   - name: compare facts
     compare_facts:
-      data: "{{ total }}"
-      dest_raw: "{{ playbook_dir }}/raw.json"
-      dest_result: "{{ playbook_dir }}/total.json"
+      services: "{{ my_services }}"
+      packages: "{{ my_packages }}"
+      system: "{{ my_system }}"
+      dest_raw: "{{ playbook_dir }}"
+      dest_result: "{{ playbook_dir }}"
     register: compared_result
     delegate_to: localhost
     run_once: True
@@ -57,7 +59,9 @@ Json from facts
 ```yml
   - name: set global var
     set_fact:
-      total: "{{ total | default ({}) | combine( { item: {'packages': hostvars[item].ansible_facts.packages, 'services': hostvars[item].ansible_facts.services, 'system': {hostvars[item].ansible_distribution: hostvars[item].ansible_distribution_version} } } ) }}"
+      my_services: "{{ my_services | default ({}) | combine( { item: hostvars[item].ansible_facts.services} ) }}"
+      my_packages: "{{ my_packages | default ({}) | combine( { item: hostvars[item].ansible_facts.packages} ) }}"
+      my_system: "{{ my_system | default ({}) | combine( { item: {hostvars[item].ansible_distribution: hostvars[item].ansible_distribution_version} }) }}"
     delegate_to: localhost
     run_once: True
     loop: "{{ ansible_play_hosts }}"
@@ -67,11 +71,13 @@ Json from facts
 
 * Optional
 Output raw json to path
-* [example raw](playbook/audit_pckg/raw.json)
+* [example raw packages](playbook/audit_pckg/raw_packages.json)
+* [example raw services](playbook/audit_pckg/raw_services.json)
+* [example raw system](playbook/audit_pckg/raw_system.json)
 
 #### dest_result
 
 * Optional
 Output result json to path
 
-* [example result](playbook/audit_pckg/total.json)
+* [example result](playbook/audit_pckg/result.json)
