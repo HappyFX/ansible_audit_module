@@ -1,0 +1,19 @@
+<h1>Audit</h1>
+{% for audit_host in ansible_play_hosts %}
+<pre>{{ audit_host }}</pre>
+{% endfor %}
+{% if item.value %}
+<h2>See diff below</h2>
+{%   for name, data in item.value.items() %}
+<details>
+  <summary>{{ name }}</summary>
+{%     for state, hosts in data.items() %}
+{%       for host in hosts %}
+<pre>{{ state }}: {{ host }}</pre>
+{%       endfor %}
+{%     endfor %}
+</details>
+{%   endfor %}
+{% else %}
+<h2>No diff</h2>
+{% endif %}
