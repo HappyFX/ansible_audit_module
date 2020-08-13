@@ -8,8 +8,12 @@
 <details>
   <summary>{{ name }}</summary>
 {%     for state, hosts in data.items() %}
-{%       for host in hosts %}
-<pre>{{ state }}: {{ host }}</pre>
+{%       for host in ansible_play_hosts %}
+{%         if host in hosts %}
+<pre style="background: orange;">{{ state }}: {{ host }}</pre>
+{%         else %}
+<pre style="background: red;">absent: {{ host }}</pre>
+{%         endif %}
 {%       endfor %}
 {%     endfor %}
 </details>
