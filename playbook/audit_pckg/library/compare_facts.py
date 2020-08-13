@@ -3,7 +3,8 @@ from ansible.module_utils.basic import *
 import codecs
 import json
 
-def compare_hosts(data, count):
+def compare_hosts(data):
+  count = len(data.keys())
   result = {}
   for host, values in data.items():
     for module_type, module_values in values.items():
@@ -16,52 +17,81 @@ def compare_hosts(data, count):
           del result[module_type][key]
   return result
 
-def handler_services(data):
+def handler_by_key(data, params):
+  key = params.get('key_name')
   result = {}
-  for service_name, values in data.items():
-    result.setdefault(service_name, values['status'])
+  for result_key, values in data.items():
+    value = values.get(key)
+    if None == value: continue
+    result = set_result(result, result_key, value)
   return result
 
-def handler_packages(data):
+def handler_by_key_in_list(data, params):
+  list_index = params.get('list_index')
+  key = params.get('key_name')
   result = {}
-  for package_name, values in data.items():
-    result.setdefault(package_name, values[0]['version'])
+  for result_key, values in data.items():
+    try:
+      index = values[list_index]
+    except IndexError:
+      index = None
+    if None == index: continue
+    value = index.get(key)
+    if None == value: continue
+    result = set_result(result, result_key, value)
   return result
 
-def handler_system(data):
+def handler_direct(data, params):
   result = {}
-  for system_name, version in data.items():
-    result.setdefault(system_name, version)
+  for result_key, value in data.items():
+    result = set_result(result, result_key, value)
+  return result
+
+def set_result(result, key, value):
+  result.setdefault(key, value)
   return result
 
 def handle_hostvars(params):
-  data = params.get('data')
+  choice_map = {
+    "services": {
+      'handler_type': handler_by_key,
+      'key_name': 'status',
+    },
+    "packages": {
+      'handler_type': handler_by_key_in_list,
+      'list_index': 0,
+      'key_name': 'version',
+    },
+    "system": {
+      'handler_type': handler_direct,
+    },
+  }
   dest_raw = params.get('dest_raw')
   dest_result = params.get('dest_result')
-  if dest_raw:
-    write_json(data, dest_raw)
   result = {}
-  choice_map = {
-    "services": handler_services,
-    "packages": handler_packages,
-    "system": handler_system,
-  }
-  for host, data_values in data.items():
-    result.setdefault(host, {})
-    for module_type, module_values in data_values.items():
-      result[host].setdefault(module_type, choice_map.get(module_type)(module_values))
-  result_by_modules = compare_hosts(data = result, count = len(data.keys()))
-  if dest_result:
-    write_json(result_by_modules, dest_result)
+  for option_name, function_params in choice_map.items():
+    data_set = params.get(option_name)
+    if None == data_set: continue
+    write_json(data_set, dest_raw, 'raw_' + option_name)
+    for host, values in data_set.items():
+      result.setdefault(host, {})
+      combain_result = function_params.get('handler_type')(values, function_params)
+      result[host].setdefault(option_name, combain_result)
+  result_by_modules = compare_hosts(result)
+  write_json(result_by_modules, dest_result, 'result')
   return result_by_modules
 
-def write_json(data, path):
-  with codecs.open(path, 'w', encoding='utf-8') as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
+def write_json(data_json, dest_folder, file_name):
+  if dest_folder:
+    path = dest_folder + '/' + file_name + '.json'
+    with codecs.open(path, 'w', encoding='utf-8') as f:
+      json.dump(data_json, f, ensure_ascii=False, indent=2)
 
 def main():
   fields = {
-    "data": {"required": True, "type": "dict"},
+    "services": {"required": False, "type": "dict"},
+    "packages": {"required": False, "type": "dict"},
+    "system": {"required": False, "type": "dict"},
     "dest_raw": {"default": False, "type": "str"},
     "dest_result": {"default": False, "type": "str"},
   }

@@ -1,0 +1,11 @@
+{
+  "host_A": {
+    "CentOS": "7.7"
+  },
+  "host_B": {
+    "CentOS": "7.7"
+  },
+  "host_C": {
+    "CentOS": "7.7"
+  }
+}

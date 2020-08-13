@@ -1,0 +1,5 @@
+---
+audit_pckg_folder_results: "{{ playbook_dir }}/reports"
+audit_pckg_folder_html_report: "{{ audit_pckg_folder_results }}/html"
+audit_pckg_folder_json_raw: "{{ audit_pckg_folder_results }}/json_raw"
+audit_pckg_folder_json_result: "{{ audit_pckg_folder_results }}/json_result"
