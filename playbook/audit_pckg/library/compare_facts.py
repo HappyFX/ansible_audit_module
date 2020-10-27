@@ -121,7 +121,7 @@ def handle_hostvars(params: dict) -> dict:
 
 def filter_dict(values: dict, filter_val: list, filter_key: str) -> dict:
   result = []
-  if filter == {}:
+  if filter_val == None or filter_val == []:
     result = values
   else:
     for data in values:

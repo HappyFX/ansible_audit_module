@@ -50,15 +50,54 @@ Output of module is dict
 
 #### data
 
-* required
-Json from facts
+* required atleast one
+
+##### services
+
+Systemd list
 
 ```yml
   - name: set global var
     set_fact:
       my_services: "{{ my_services | default ({}) | combine( { item: hostvars[item].ansible_facts.services} ) }}"
+    delegate_to: localhost
+    run_once: True
+    loop: "{{ ansible_play_hosts }}"
+```
+
+##### packages
+
+Yum packages
+
+```yml
+  - name: set global var
+    set_fact:
       my_packages: "{{ my_packages | default ({}) | combine( { item: hostvars[item].ansible_facts.packages} ) }}"
+    delegate_to: localhost
+    run_once: True
+    loop: "{{ ansible_play_hosts }}"
+```
+
+##### mounts
+
+Mount points
+
+```yml
+  - name: set global var
+    set_fact:
       my_mounts: "{{ my_mounts | default ({}) | combine( { item: hostvars[item].ansible_mounts} ) }}"
+    delegate_to: localhost
+    run_once: True
+    loop: "{{ ansible_play_hosts }}"
+```
+
+##### system
+
+System release
+
+```yml
+  - name: set global var
+    set_fact:
       my_system: "{{ my_system | default ({}) | combine( { item: {hostvars[item].ansible_distribution: hostvars[item].ansible_distribution_version} }) }}"
     delegate_to: localhost
     run_once: True
@@ -80,3 +119,8 @@ Output raw json to path
 Output result json to path
 
 * [example result](playbook/audit_pckg/reports/json_result/result.json)
+
+#### mounts_filter
+
+* Optional
+Filter for mount points
