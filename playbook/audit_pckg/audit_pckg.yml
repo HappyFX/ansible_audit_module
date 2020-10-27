@@ -10,6 +10,11 @@
     package_facts:
       manager: auto
 
+  - name: Collect only facts about hardware
+    setup:
+      gather_subset:
+      - hardware
+
   - name: Gather systemd facts
     service_facts:
 
@@ -17,6 +22,7 @@
     set_fact:
       my_services: "{{ my_services | default ({}) | combine( { item: hostvars[item].ansible_facts.services} ) }}"
       my_packages: "{{ my_packages | default ({}) | combine( { item: hostvars[item].ansible_facts.packages} ) }}"
+      my_mounts: "{{ my_mounts | default ({}) | combine( { item: hostvars[item].ansible_mounts} ) }}"
       my_system: "{{ my_system | default ({}) | combine( { item: {hostvars[item].ansible_distribution: hostvars[item].ansible_distribution_version} }) }}"
     delegate_to: localhost
     run_once: True
@@ -39,6 +45,10 @@
     compare_facts:
       services: "{{ my_services }}"
       packages: "{{ my_packages }}"
+      mounts: "{{ my_mounts }}"
+      mounts_filter:
+        - /
+        - /boot
       system: "{{ my_system }}"
       dest_raw: "{{ audit_pckg_folder_json_raw }}"
       dest_result: "{{ audit_pckg_folder_json_result }}"

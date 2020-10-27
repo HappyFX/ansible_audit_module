@@ -1,15 +1,18 @@
 {
   "services": {
-    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_tmp.service": {
-      "unknown": [
-        "host_A",
-        "host_B"
+    "openstack-nova-console.service": {
+      "masked": [
+        "host_A"
+      ],
+      "disabled": [
+        "host_B",
+        "host_C"
       ]
     },
-    "rhsm-facts.service": {
-      "disabled": [
+    "systemd-networkd.service": {
+      "enabled": [
         "host_A",
-        "host_B"
+        "host_C"
       ]
     },
     "saslauthd.service": {
@@ -18,42 +21,10 @@
         "host_C"
       ]
     },
-    "atd.service": {
-      "enabled": [
+    "chrony-dnssrv@.service": {
+      "static": [
         "host_A",
-        "host_B"
-      ]
-    },
-    "ipmievd.service": {
-      "disabled": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "openvswitch.service": {
-      "enabled": [
-        "host_A",
-        "host_B"
-      ],
-      "disabled": [
         "host_C"
-      ]
-    },
-    "nbd@.service": {
-      "disabled": [
-        "host_A"
-      ]
-    },
-    "oddjobd.service": {
-      "enabled": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "consul-server.service": {
-      "disabled": [
-        "host_A",
-        "host_B"
       ]
     },
     "firewalld.service": {
@@ -65,217 +36,195 @@
         "host_C"
       ]
     },
-    "zabbix-agent.service": {
+    "regen_ovs.service": {
       "enabled": [
         "host_A",
-        "host_B"
+        "host_C"
       ]
     },
-    "puppet.service": {
+    "postfix.service": {
+      "enabled": [
+        "host_A",
+        "host_C"
+      ]
+    },
+    "systemd-networkd-wait-online.service": {
       "disabled": [
         "host_A",
-        "host_B"
+        "host_C"
       ]
     },
-    "lvm2-pvscan@253:5.service": {
-      "unknown": [
-        "host_A"
+    "teamd@.service": {
+      "static": [
+        "host_A",
+        "host_C"
       ]
     },
-    "lvm2-pvscan@253:4.service": {
-      "unknown": [
-        "host_A"
+    "chrony-wait.service": {
+      "disabled": [
+        "host_A",
+        "host_C"
       ]
     },
-    "NetworkManager-wait-online.service": {
+    "rpcbind.service": {
       "enabled": [
         "host_A",
+        "host_C"
+      ],
+      "disabled": [
         "host_B"
       ]
     },
-    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_var.service": {
-      "unknown": [
+    "chronyd.service": {
+      "enabled": [
         "host_A",
+        "host_C"
+      ]
+    },
+    "httpd.service": {
+      "disabled": [
+        "host_A",
+        "host_C"
+      ],
+      "masked": [
+        "host_B"
+      ]
+    },
+    "dbus-org.freedesktop.network1.service": {
+      "enabled": [
+        "host_A",
+        "host_C"
+      ]
+    },
+    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_tmp.service": {
+      "unknown": [
+        "host_B"
+      ]
+    },
+    "rhsm-facts.service": {
+      "disabled": [
+        "host_B"
+      ]
+    },
+    "atd.service": {
+      "enabled": [
+        "host_B"
+      ]
+    },
+    "ipmievd.service": {
+      "disabled": [
+        "host_B"
+      ]
+    },
+    "oddjobd.service": {
+      "enabled": [
+        "host_B"
+      ]
+    },
+    "consul-server.service": {
+      "disabled": [
         "host_B"
       ]
     },
     "rhsm.service": {
       "disabled": [
-        "host_A",
         "host_B"
       ]
     },
-    "httpd.service": {
-      "masked": [
-        "host_A",
-        "host_B"
-      ],
+    "puppet.service": {
       "disabled": [
-        "host_C"
+        "host_B"
+      ]
+    },
+    "NetworkManager-wait-online.service": {
+      "enabled": [
+        "host_B"
+      ]
+    },
+    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_var.service": {
+      "unknown": [
+        "host_B"
       ]
     },
     "atopacct.service": {
       "disabled": [
-        "host_A",
         "host_B"
       ]
     },
     "ipmi.service": {
       "disabled": [
-        "host_A",
         "host_B"
       ]
     },
     "systemd-fsck@dev-mapper-vg_system\\x2dlvt_opt.service": {
       "unknown": [
-        "host_A",
         "host_B"
       ]
     },
     "realmd.service": {
       "static": [
-        "host_A",
         "host_B"
       ]
     },
     "ntpd.service": {
       "enabled": [
-        "host_A",
         "host_B"
       ]
     },
     "puppetagent.service": {
       "disabled": [
-        "host_A",
         "host_B"
+      ]
+    },
+    "*": {
+      "unknown": [
+        "host_B",
+        "host_C"
       ]
     },
     "telegraf.service": {
       "enabled": [
-        "host_A",
         "host_B"
       ]
     },
     "ntpdate.service": {
       "disabled": [
-        "host_A",
         "host_B"
       ]
     },
     "cgred.service": {
       "disabled": [
-        "host_A",
         "host_B"
       ]
     },
     "rhsmcertd.service": {
       "enabled": [
-        "host_A",
         "host_B"
-      ]
-    },
-    "libvirt-guests.service": {
-      "disabled": [
-        "host_A"
-      ]
-    },
-    "rpcbind.service": {
-      "disabled": [
-        "host_A",
-        "host_B"
-      ],
-      "enabled": [
-        "host_C"
       ]
     },
     "liagentd.service": {
       "enabled": [
-        "host_A",
         "host_B"
       ]
     },
     "NetworkManager.service": {
       "disabled": [
-        "host_A",
         "host_B"
-      ]
-    },
-    "iops_poller.service": {
-      "static": [
-        "host_A"
       ]
     },
     "liupdaterd.service": {
       "enabled": [
-        "host_A",
         "host_B"
       ]
     },
     "cgconfig.service": {
       "disabled": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "lldpad.service": {
-      "enabled": [
-        "host_A",
         "host_B"
       ]
     },
     "sysstat.service": {
       "enabled": [
-        "host_A",
         "host_B"
-      ]
-    },
-    "nbd-server.service": {
-      "disabled": [
-        "host_A"
-      ]
-    },
-    "certmonger.service": {
-      "disabled": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "NetworkManager-dispatcher.service": {
-      "disabled": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "autofs.service": {
-      "disabled": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "lvm2-pvscan@253:1.service": {
-      "unknown": [
-        "host_A"
-      ]
-    },
-    "atop.service": {
-      "disabled": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_home.service": {
-      "unknown": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "corosync.service": {
-      "enabled": [
-        "host_A",
-        "host_B"
-      ],
-      "disabled": [
-        "host_C"
       ]
     },
     "lvm2-pvscan@253:2.service": {
@@ -284,29 +233,29 @@
         "host_C"
       ]
     },
-    "systemd-networkd.service": {
-      "enabled": [
-        "host_C"
-      ]
-    },
-    "chrony-wait.service": {
+    "certmonger.service": {
       "disabled": [
-        "host_C"
+        "host_B"
       ]
     },
-    "chrony-dnssrv@.service": {
-      "static": [
-        "host_C"
+    "NetworkManager-dispatcher.service": {
+      "disabled": [
+        "host_B"
       ]
     },
-    "regen_ovs.service": {
-      "enabled": [
-        "host_C"
+    "autofs.service": {
+      "disabled": [
+        "host_B"
       ]
     },
-    "lldpd.service": {
-      "enabled": [
-        "host_C"
+    "atop.service": {
+      "disabled": [
+        "host_B"
+      ]
+    },
+    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_home.service": {
+      "unknown": [
+        "host_B"
       ]
     },
     "dbus-org.fedoraproject.FirewallD1.service": {
@@ -314,290 +263,22 @@
         "host_C"
       ]
     },
-    "systemd-networkd-wait-online.service": {
-      "disabled": [
-        "host_C"
-      ]
-    },
-    "teamd@.service": {
-      "static": [
-        "host_C"
-      ]
-    },
     "iscsi-onboot.service": {
-      "enabled": [
-        "host_C"
-      ]
-    },
-    "chronyd.service": {
-      "enabled": [
-        "host_C"
-      ]
-    },
-    "dbus-org.freedesktop.network1.service": {
-      "enabled": [
-        "host_C"
-      ]
-    },
-    "postfix.service": {
       "enabled": [
         "host_C"
       ]
     }
   },
   "packages": {
-    "boost159-system": {
-      "1.59.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "boost159-log": {
-      "1.59.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-brocade": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "smem": {
-      "1.4": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "cups-client": {
-      "1.6.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-bladecenter": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
     "rsyslog": {
+      "8.24.0": [
+        "host_A"
+      ],
       "8.2004.0": [
-        "host_A",
         "host_B"
       ],
       "8.1910.0": [
         "host_C"
-      ]
-    },
-    "cpp": {
-      "4.8.5": [
-        "host_A"
-      ]
-    },
-    "cyrus-sasl-md5": {
-      "2.1.26": [
-        "host_A"
-      ]
-    },
-    "python-custodia": {
-      "0.3.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "postgresql-libs": {
-      "9.2.24": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-redfish": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "VMware-Log-Insight-Agent": {
-      "3.6.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "pyusb": {
-      "1.0.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-apc-snmp": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-PyMySQL": {
-      "0.9.2": [
-        "host_A",
-        "host_B"
-      ],
-      "0.9.3": [
-        "host_C"
-      ]
-    },
-    "libmodman": {
-      "2.0.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "ruby-augeas": {
-      "0.5.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "maxscale": {
-      "2.4.7": [
-        "host_A",
-        "host_B"
-      ],
-      "2.4.11": [
-        "host_C"
-      ]
-    },
-    "kernel-headers": {
-      "3.10.0": [
-        "host_A"
-      ]
-    },
-    "glusterfs": {
-      "3.12.2": [
-        "host_A",
-        "host_B"
-      ],
-      "6.0": [
-        "host_C"
-      ]
-    },
-    "libwebp": {
-      "0.3.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-saharaclient": {
-      "1.5.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "nbd": {
-      "3.14": [
-        "host_A"
-      ]
-    },
-    "nano": {
-      "2.3.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-kerberos": {
-      "1.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "lvm2-libs": {
-      "2.02.185": [
-        "host_A",
-        "host_B"
-      ],
-      "2.02.186": [
-        "host_C"
-      ]
-    },
-    "hiera": {
-      "1.3.4": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "corosync": {
-      "2.4.3": [
-        "host_A",
-        "host_B"
-      ],
-      "2.4.5": [
-        "host_C"
-      ]
-    },
-    "libcgroup-tools": {
-      "0.41": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-troveclient": {
-      "2.14.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-django": {
-      "1.11.23": [
-        "host_A",
-        "host_B"
-      ],
-      "1.11.27": [
-        "host_C"
-      ]
-    },
-    "rdma-core": {
-      "22.1": [
-        "host_A",
-        "host_B"
-      ],
-      "22.4": [
-        "host_C"
-      ]
-    },
-    "setools-console": {
-      "3.3.8": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "NetworkManager-wifi": {
-      "1.18.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-gssapi": {
-      "1.2.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "ltrace": {
-      "0.7.91": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-ptyprocess": {
-      "0.5.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "lcms2": {
-      "2.6": [
-        "host_A",
-        "host_B"
       ]
     },
     "libibverbs": {
@@ -609,60 +290,96 @@
         "host_C"
       ]
     },
-    "subscription-manager-rhsm": {
-      "1.24.13": [
+    "grub2": {
+      "2.02": [
         "host_A",
-        "host_B"
-      ]
-    },
-    "tmux": {
-      "1.8": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "wget": {
-      "1.14": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-html5lib": {
-      "0.999": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-amqplib": {
-      "1.0.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libimagequant": {
-      "2.12.5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "perf": {
-      "3.10.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "tzdata": {
-      "2019c": [
-        "host_A",
-        "host_B"
-      ],
-      "2019b": [
         "host_C"
       ]
     },
-    "m4": {
-      "1.4.16": [
+    "python2-PyMySQL": {
+      "0.9.3": [
         "host_A",
+        "host_C"
+      ],
+      "0.9.2": [
+        "host_B"
+      ]
+    },
+    "glusterfs": {
+      "3.12.2": [
+        "host_A",
+        "host_B"
+      ],
+      "6.0": [
+        "host_C"
+      ]
+    },
+    "systemd-networkd": {
+      "219": [
+        "host_A",
+        "host_C"
+      ]
+    },
+    "lvm2-libs": {
+      "2.02.185": [
+        "host_A",
+        "host_B"
+      ],
+      "2.02.186": [
+        "host_C"
+      ]
+    },
+    "corosync": {
+      "2.4.3": [
+        "host_A",
+        "host_B"
+      ],
+      "2.4.5": [
+        "host_C"
+      ]
+    },
+    "libtdb": {
+      "1.3.16": [
+        "host_A",
+        "host_B"
+      ],
+      "1.3.18": [
+        "host_C"
+      ]
+    },
+    "python2-django": {
+      "1.11.27": [
+        "host_A",
+        "host_C"
+      ],
+      "1.11.23": [
+        "host_B"
+      ]
+    },
+    "rdma-core": {
+      "22.1": [
+        "host_A",
+        "host_B"
+      ],
+      "22.4": [
+        "host_C"
+      ]
+    },
+    "python-lxml": {
+      "3.4.1": [
+        "host_A",
+        "host_C"
+      ],
+      "3.2.1": [
+        "host_B"
+      ]
+    },
+    "python2-uritemplate": {
+      "3.0.1": [
+        "host_A",
+        "host_C"
+      ],
+      "3.0.0": [
         "host_B"
       ]
     },
@@ -675,118 +392,9 @@
         "host_C"
       ]
     },
-    "python-pulp-common": {
-      "2.6.4": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "rsyslog-relp": {
-      "8.2004.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libICE": {
-      "1.0.9": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-ilo-ssh": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "oddjob-mkhomedir": {
-      "0.31.5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "mc": {
-      "4.8.7": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-wti": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-emerson": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-pygments": {
-      "2.2.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "http-parser": {
-      "2.7.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-vmware-soap": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "gsettings-desktop-schemas": {
-      "3.28.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-ecdsa": {
-      "0.13.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "mod_ssl": {
-      "2.4.6": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-ipmilan": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-ilo2": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "rsyslog-elasticsearch": {
-      "8.2004.0": [
-        "host_A",
-        "host_B"
-      ],
-      "8.1910.0": [
-        "host_C"
-      ]
-    },
-    "PyYAML": {
-      "3.11": [
-        "host_A",
-        "host_B"
-      ],
-      "3.10": [
-        "host_C"
+    "socat": {
+      "1.7.3.2": [
+        "host_A"
       ]
     },
     "samba-common-libs": {
@@ -798,43 +406,18 @@
         "host_C"
       ]
     },
-    "glibc-headers": {
-      "2.17": [
-        "host_A"
-      ]
-    },
-    "ldns": {
-      "1.6.16": [
+    "postfix": {
+      "2.10.1": [
         "host_A",
-        "host_B"
+        "host_C"
       ]
     },
-    "libgnome-keyring": {
-      "3.12.0": [
-        "host_A"
-      ]
-    },
-    "libxkbfile": {
-      "1.0.9": [
+    "python2-qpid-proton": {
+      "0.31.0": [
         "host_A",
-        "host_B"
-      ]
-    },
-    "python2-extras": {
-      "1.0.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "xmlrpc-c-client": {
-      "1.32.5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-amt-ws": {
-      "4.2.1": [
-        "host_A",
+        "host_C"
+      ],
+      "0.29.0": [
         "host_B"
       ]
     },
@@ -847,12 +430,27 @@
         "host_C"
       ]
     },
-    "python2-psutil": {
-      "5.2.2": [
+    "lvm2": {
+      "2.02.185": [
         "host_A",
         "host_B"
       ],
+      "2.02.186": [
+        "host_C"
+      ]
+    },
+    "python2-psutil": {
       "5.6.7": [
+        "host_A",
+        "host_C"
+      ],
+      "5.2.2": [
+        "host_B"
+      ]
+    },
+    "libverto-libevent": {
+      "0.2.5": [
+        "host_A",
         "host_C"
       ]
     },
@@ -865,250 +463,18 @@
         "host_C"
       ]
     },
-    "libSM": {
-      "1.2.2": [
+    "libnl3-cli": {
+      "3.2.28": [
         "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-all": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "blktrace": {
-      "1.0.5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "systemd-python": {
-      "219": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libgudev1": {
-      "219": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-anyjson": {
-      "0.3.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "net-snmp-utils": {
-      "5.7.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "oddjob": {
-      "0.31.5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libtool-ltdl": {
-      "2.4.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "puppet": {
-      "4.8.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-ilo-mp": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "ed": {
-      "1.9": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "rubygem-net-http-persistent": {
-      "2.8": [
-        "host_A"
-      ]
-    },
-    "python-srpm-macros": {
-      "3": [
-        "host_A"
-      ]
-    },
-    "facter": {
-      "3.9.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-hpblade": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "librelp": {
-      "1.6.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-intelmodular": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "pytalloc": {
-      "2.1.14": [
-        "host_A",
-        "host_B"
-      ],
-      "2.1.16": [
         "host_C"
       ]
     },
-    "python-pulp-agent-lib": {
-      "2.6.4": [
+    "PyYAML": {
+      "3.10": [
         "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-ipdu": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "uwsgi": {
-      "2.0.17.1": [
-        "host_A",
-        "host_B"
-      ],
-      "2.0.18": [
         "host_C"
-      ]
-    },
-    "fence-agents-ifmib": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "ntp": {
-      "4.2.6p5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "lynis": {
-      "2.7.5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-cisco-mds": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "cpp-hocon": {
-      "0.1.6": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "usermode": {
-      "1.111": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-ibmblade": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-qpid-proton": {
-      "0.29.0": [
-        "host_A",
-        "host_B"
       ],
-      "0.31.0": [
-        "host_C"
-      ]
-    },
-    "python-XStatic-Angular-Mock": {
-      "1.2.1.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "pacemaker-cluster-libs": {
-      "1.1.20": [
-        "host_A",
-        "host_B"
-      ],
-      "1.1.21": [
-        "host_C"
-      ]
-    },
-    "ruby-shadow": {
-      "1.4.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "lvm2": {
-      "2.02.185": [
-        "host_A",
-        "host_B"
-      ],
-      "2.02.186": [
-        "host_C"
-      ]
-    },
-    "python2-qpid": {
-      "1.37.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "OpenIPMI-modalias": {
-      "2.0.27": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "ntpdate": {
-      "4.2.6p5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-apc": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "NetworkManager": {
-      "1.18.0": [
-        "host_A",
+      "3.11": [
         "host_B"
       ]
     },
@@ -1121,21 +487,12 @@
         "host_C"
       ]
     },
-    "fence-agents-scsi": {
-      "4.2.1": [
+    "maxscale": {
+      "2.4.11": [
         "host_A",
-        "host_B"
-      ]
-    },
-    "yaml-cpp": {
-      "0.5.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libunwind": {
-      "1.2": [
-        "host_A",
+        "host_C"
+      ],
+      "2.4.7": [
         "host_B"
       ]
     },
@@ -1148,40 +505,19 @@
         "host_C"
       ]
     },
-    "boost159-filesystem": {
-      "1.59.0": [
+    "libldb": {
+      "1.4.2": [
         "host_A",
         "host_B"
+      ],
+      "1.5.4": [
+        "host_C"
       ]
     },
-    "fence-agents-kdump": {
-      "4.2.1": [
+    "python2-zmq": {
+      "14.7.0": [
         "host_A",
-        "host_B"
-      ]
-    },
-    "boost159-regex": {
-      "1.59.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python3-setuptools": {
-      "39.2.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "librdmacm": {
-      "22.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-sss-murmur": {
-      "1.16.4": [
-        "host_A",
-        "host_B"
+        "host_C"
       ]
     },
     "samba-client-libs": {
@@ -1193,17 +529,21 @@
         "host_C"
       ]
     },
-    "python-devel": {
-      "2.7.5": [
-        "host_A"
+    "python2-jmespath": {
+      "0.9.4": [
+        "host_A",
+        "host_C"
+      ],
+      "0.9.0": [
+        "host_B"
       ]
     },
-    "python2-jmespath": {
-      "0.9.0": [
+    "pacemaker-cluster-libs": {
+      "1.1.20": [
         "host_A",
         "host_B"
       ],
-      "0.9.4": [
+      "1.1.21": [
         "host_C"
       ]
     },
@@ -1216,18 +556,6 @@
         "host_C"
       ]
     },
-    "python2-heatclient": {
-      "1.14.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "NetworkManager-ppp": {
-      "1.18.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
     "python2-pip": {
       "8.1.2": [
         "host_A",
@@ -1235,148 +563,47 @@
       ]
     },
     "python-django-bash-completion": {
-      "1.11.23": [
-        "host_A",
-        "host_B"
-      ],
       "1.11.27": [
+        "host_A",
         "host_C"
+      ],
+      "1.11.23": [
+        "host_B"
       ]
     },
-    "gpg-pubkey": {
-      "7bd9bf62": [
+    "libestr": {
+      "0.1.9": [
         "host_A"
       ],
-      "352c64e5": [
-        "host_B"
-      ],
-      "f4a80eb5": [
+      "0.1.11": [
+        "host_B",
         "host_C"
       ]
     },
-    "elinks": {
-      "0.12": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "pulp-rpm-handlers": {
-      "2.6.4": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libtevent": {
-      "0.9.37": [
-        "host_A",
-        "host_B"
+    "galera-4": {
+      "26.4.5": [
+        "host_A"
       ],
-      "0.9.39": [
+      "26.4.4": [
+        "host_B",
         "host_C"
       ]
     },
-    "rubygem-bundler": {
-      "1.7.8": [
+    "grub2-pc": {
+      "2.02": [
+        "host_A",
+        "host_C"
+      ]
+    },
+    "libfastjson": {
+      "0.99.4": [
         "host_A"
       ]
     },
-    "vim-common": {
-      "7.4.629": [
+    "teamd": {
+      "1.27": [
         "host_A",
-        "host_B"
-      ]
-    },
-    "openwsman-python": {
-      "2.6.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libwsman1": {
-      "2.6.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-isodate": {
-      "0.5.4": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "krb5-workstation": {
-      "1.15.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "jbigkit-libs": {
-      "2.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python3-pip": {
-      "9.0.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "bash-completion": {
-      "2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "certmonger": {
-      "0.78.4": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libldb": {
-      "1.4.2": [
-        "host_A",
-        "host_B"
-      ],
-      "1.5.4": [
         "host_C"
-      ]
-    },
-    "python-tablib": {
-      "0.10.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-compute": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "patch": {
-      "2.7.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libconfig": {
-      "1.4.9": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-ceilometerclient": {
-      "2.9.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "pcre-tools": {
-      "8.32": [
-        "host_A",
-        "host_B"
       ]
     },
     "device-mapper-event-libs": {
@@ -1388,815 +615,12 @@
         "host_C"
       ]
     },
-    "bash-completion-extras": {
-      "2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "firewalld": {
-      "0.6.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "rubygem-thor": {
-      "0.19.1": [
-        "host_A"
-      ]
-    },
-    "lldpad": {
-      "1.0.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "time": {
-      "1.7": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "glib-networking": {
-      "2.56.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "saslwrapper": {
-      "0.22": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "device-mapper": {
-      "1.02.158": [
-        "host_A",
-        "host_B"
-      ],
-      "1.02.164": [
-        "host_C"
-      ]
-    },
-    "fence-agents-vmware-rest": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-common": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "screen": {
-      "4.1.0": [
-        "host_A"
-      ]
-    },
-    "python-yubico": {
-      "1.2.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "avahi-autoipd": {
-      "0.6.31": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "cyrus-sasl": {
-      "2.1.26": [
-        "host_A",
-        "host_C"
-      ]
-    },
-    "jq": {
-      "1.5": [
-        "host_A"
-      ]
-    },
-    "js": {
-      "1.8.5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-gofer": {
-      "2.6.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "gcc": {
-      "4.8.5": [
-        "host_A"
-      ]
-    },
-    "libvirt-libs": {
-      "4.5.0": [
-        "host_A",
-        "host_C"
-      ]
-    },
-    "sysstat": {
-      "10.1.5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-mistralclient": {
-      "3.3.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-lockfile": {
-      "0.9.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-saslwrapper": {
-      "0.22": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-eps": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-virt": {
-      "0.3.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "subscription-manager": {
-      "1.24.13": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "rubygem-rgen": {
-      "0.6.6": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "iotop": {
-      "0.6": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-zmq": {
-      "15.3.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libXcursor": {
-      "1.1.15": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "nss_compat_ossl": {
-      "0.9.6": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-ilo-moonshot": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "gnutls-utils": {
-      "3.3.29": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "realmd": {
-      "0.16.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libvirt-bash-completion": {
-      "4.5.0": [
-        "host_A"
-      ]
-    },
-    "boost159-chrono": {
-      "1.59.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "pacemaker": {
-      "1.1.20": [
-        "host_A",
-        "host_B"
-      ],
-      "1.1.21": [
-        "host_C"
-      ]
-    },
-    "libselinux-ruby": {
-      "2.5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-pexpect": {
-      "4.6": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "leatherman": {
-      "1.3.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-cliff-tablib": {
-      "1.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "pam_krb5": {
-      "2.4.8": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "glusterfs-client-xlators": {
-      "3.12.2": [
-        "host_A",
-        "host_B"
-      ],
-      "6.0": [
-        "host_C"
-      ]
-    },
-    "blas": {
-      "3.4.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-cisco-ucs": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-eaton-snmp": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "pacemaker-libs": {
-      "1.1.20": [
-        "host_A",
-        "host_B"
-      ],
-      "1.1.21": [
-        "host_C"
-      ]
-    },
-    "whois": {
-      "5.1.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "subscription-manager-rhsm-certificates": {
-      "1.24.13": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-krbV": {
-      "1.0.90": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "yajl": {
-      "2.0.4": [
-        "host_A",
-        "host_C"
-      ]
-    },
-    "libsoup": {
-      "2.62.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-nss": {
-      "0.16.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "glusterfs-api": {
-      "3.12.2": [
-        "host_A",
-        "host_B"
-      ],
-      "6.0": [
-        "host_C"
-      ]
-    },
-    "bzip2": {
-      "1.0.6": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "m2crypto": {
-      "0.21.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "ipmitool": {
-      "1.8.18": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "mysql-connector-python": {
-      "1.1.6": [
-        "host_A"
-      ]
-    },
-    "autogen-libopts": {
-      "5.18": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "telegraf": {
-      "1.14.4": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libnl": {
-      "1.1.4": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "boost159-program-options": {
-      "1.59.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "corosynclib": {
-      "2.4.3": [
-        "host_A",
-        "host_B"
-      ],
-      "2.4.5": [
-        "host_C"
-      ]
-    },
-    "lapack": {
-      "3.4.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-dmidecode": {
-      "3.12.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-gflags": {
-      "2.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "rsyslog-kafka": {
-      "8.2004.0": [
-        "host_A",
-        "host_B"
-      ],
-      "8.1910.0": [
-        "host_C"
-      ]
-    },
-    "python-qrcode-core": {
-      "5.0.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "nmap": {
-      "6.40": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python3": {
-      "3.6.8": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libtdb": {
-      "1.3.16": [
-        "host_A",
-        "host_B"
-      ],
-      "1.3.18": [
-        "host_C"
-      ]
-    },
-    "NaviCLI-Linux-64-x86-en_US": {
-      "7.33.9.2.31": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "ca-certificates": {
-      "2019.2.32": [
-        "host_A",
-        "host_B"
-      ],
-      "2018.2.22": [
-        "host_C"
-      ]
-    },
-    "fence-agents-rsb": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-rsa": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "redhat-lsb-submod-security": {
-      "4.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "glibc-devel": {
-      "2.17": [
-        "host_A"
-      ]
-    },
-    "gpm-libs": {
-      "1.20.7": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "numactl": {
-      "2.0.12": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "iftop": {
-      "1.0": [
-        "host_A"
-      ]
-    },
-    "xmlrpc-c": {
-      "1.32.5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "OpenIPMI": {
-      "2.0.27": [
-        "host_A",
-        "host_B"
-      ]
-    },
     "zabbix-agent": {
+      "4.2.8": [
+        "host_A",
+        "host_C"
+      ],
       "4.0.21": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "boost159-locale": {
-      "1.59.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "xorg-x11-xauth": {
-      "1.0.9": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libXfixes": {
-      "5.0.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-rpm-macros": {
-      "3": [
-        "host_A"
-      ]
-    },
-    "python2-markdown": {
-      "2.4.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-rpm-macros": {
-      "3": [
-        "host_A"
-      ]
-    },
-    "libXaw": {
-      "1.0.13": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "vim-enhanced": {
-      "7.4.629": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libXrender": {
-      "0.9.10": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-mpath": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libfontenc": {
-      "1.1.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libicu": {
-      "50.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-pulp-rpm-common": {
-      "2.6.4": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "qpid-proton-c": {
-      "0.29.0": [
-        "host_A",
-        "host_B"
-      ],
-      "0.31.0": [
-        "host_C"
-      ]
-    },
-    "fence-agents-drac5": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "boost159-atomic": {
-      "1.59.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-heuristics-ping": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libvirt-client": {
-      "4.5.0": [
-        "host_A"
-      ]
-    },
-    "libvirt-devel": {
-      "4.5.0": [
-        "host_A"
-      ]
-    },
-    "boost159-date-time": {
-      "1.59.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-uritemplate": {
-      "3.0.0": [
-        "host_A",
-        "host_B"
-      ],
-      "3.0.1": [
-        "host_C"
-      ]
-    },
-    "python2-pycryptodomex": {
-      "3.7.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libkadm5": {
-      "1.15.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "rsyslog-mmjsonparse": {
-      "8.2004.0": [
-        "host_A",
-        "host_B"
-      ],
-      "8.1910.0": [
-        "host_C"
-      ]
-    },
-    "hesiod": {
-      "3.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "xorg-x11-apps": {
-      "7.7": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libtiff": {
-      "4.0.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "sos": {
-      "3.7": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "ppp": {
-      "2.4.5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "gdisk": {
-      "0.8.10": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-gofer-proton": {
-      "2.6.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libXxf86vm": {
-      "1.1.4": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "uwsgi-plugin-common": {
-      "2.0.17.1": [
-        "host_A",
-        "host_B"
-      ],
-      "2.0.18": [
-        "host_C"
-      ]
-    },
-    "python-XStatic-QUnit": {
-      "1.14.0.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "PyPAM": {
-      "0.5.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-syspurpose": {
-      "1.24.13": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-ethtool": {
-      "0.8": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "spax": {
-      "1.5.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libXft": {
-      "2.3.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "yum-plugin-remove-with-leaves": {
-      "1.1.31": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "boost159-thread": {
-      "1.59.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "vim-filesystem": {
-      "7.4.629": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libmpc": {
-      "1.0.1": [
-        "host_A"
-      ]
-    },
-    "atop": {
-      "2.4.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "openjpeg2": {
-      "2.3.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libXt": {
-      "1.1.5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libXext": {
-      "1.3.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "mtr": {
-      "0.85": [
-        "host_A",
         "host_B"
       ]
     },
@@ -2209,21 +633,161 @@
         "host_C"
       ]
     },
-    "autofs": {
-      "5.0.7": [
+    "cyrus-sasl": {
+      "2.1.26": [
+        "host_A",
+        "host_C"
+      ]
+    },
+    "device-mapper": {
+      "1.02.158": [
+        "host_A",
+        "host_B"
+      ],
+      "1.02.164": [
+        "host_C"
+      ]
+    },
+    "libvirt-libs": {
+      "4.5.0": [
+        "host_A",
+        "host_C"
+      ]
+    },
+    "yajl": {
+      "2.0.4": [
+        "host_A",
+        "host_C"
+      ]
+    },
+    "virt-top": {
+      "1.0.8": [
+        "host_A",
+        "host_C"
+      ]
+    },
+    "pacemaker": {
+      "1.1.20": [
+        "host_A",
+        "host_B"
+      ],
+      "1.1.21": [
+        "host_C"
+      ]
+    },
+    "python2-pyasn1": {
+      "0.4.2": [
+        "host_A",
+        "host_C"
+      ],
+      "0.1.9": [
+        "host_B"
+      ]
+    },
+    "glusterfs-client-xlators": {
+      "3.12.2": [
+        "host_A",
+        "host_B"
+      ],
+      "6.0": [
+        "host_C"
+      ]
+    },
+    "pacemaker-libs": {
+      "1.1.20": [
+        "host_A",
+        "host_B"
+      ],
+      "1.1.21": [
+        "host_C"
+      ]
+    },
+    "qpid-proton-c": {
+      "0.31.0": [
+        "host_A",
+        "host_C"
+      ],
+      "0.29.0": [
+        "host_B"
+      ]
+    },
+    "glusterfs-api": {
+      "3.12.2": [
+        "host_A",
+        "host_B"
+      ],
+      "6.0": [
+        "host_C"
+      ]
+    },
+    "libteam": {
+      "1.27": [
+        "host_A",
+        "host_C"
+      ]
+    },
+    "libtevent": {
+      "0.9.37": [
+        "host_A",
+        "host_B"
+      ],
+      "0.9.39": [
+        "host_C"
+      ]
+    },
+    "python-extras": {
+      "1.0.0": [
+        "host_A",
+        "host_C"
+      ]
+    },
+    "corosynclib": {
+      "2.4.3": [
+        "host_A",
+        "host_B"
+      ],
+      "2.4.5": [
+        "host_C"
+      ]
+    },
+    "NaviCLI-Linux-64-x86-en_US": {
+      "7.33.9.1.55": [
+        "host_A"
+      ],
+      "7.33.9.2.31": [
+        "host_B"
+      ]
+    },
+    "iwl7265-firmware": {
+      "22.0.7.0": [
+        "host_A",
+        "host_C"
+      ]
+    },
+    "wget": {
+      "1.14": [
         "host_A",
         "host_B"
       ]
     },
-    "mailx": {
-      "12.5": [
+    "grub2-pc-modules": {
+      "2.02": [
+        "host_A",
+        "host_C"
+      ]
+    },
+    "firewalld": {
+      "0.6.3": [
         "host_A",
         "host_B"
       ]
     },
-    "libproxy": {
-      "0.4.11": [
+    "python2-pyasn1-modules": {
+      "0.4.2": [
         "host_A",
+        "host_C"
+      ],
+      "0.1.9": [
         "host_B"
       ]
     },
@@ -2236,55 +800,8 @@
         "host_C"
       ]
     },
-    "oniguruma": {
-      "6.7.0": [
-        "host_A"
-      ]
-    },
-    "gnutls-dane": {
-      "3.3.29": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-pillow": {
-      "4.0.0": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libXmu": {
-      "1.1.2": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "ruby-facter": {
-      "3.9.3": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python2-olefile": {
-      "0.46": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "libverto-tevent": {
-      "0.2.5": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-cheetah": {
-      "2.4.4": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "python-dns": {
-      "1.15.0": [
+    "bzip2": {
+      "1.0.6": [
         "host_A",
         "host_B"
       ]
@@ -2298,66 +815,146 @@
         "host_C"
       ]
     },
-    "python3-libs": {
-      "3.6.8": [
+    "chrony": {
+      "3.4": [
         "host_A",
-        "host_B"
-      ]
-    },
-    "fence-agents-rhevm": {
-      "4.2.1": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "OpenIPMI-libs": {
-      "2.0.27": [
-        "host_A",
-        "host_B"
-      ]
-    },
-    "uwsgi-plugin-python2": {
-      "2.0.17.1": [
-        "host_A",
-        "host_B"
-      ],
-      "2.0.18": [
         "host_C"
       ]
     },
-    "python-posix_ipc": {
-      "0.9.8": [
-        "host_A",
+    "smem": {
+      "1.4": [
         "host_B"
       ]
     },
-    "NetworkManager-tui": {
-      "1.18.0": [
-        "host_A",
+    "boost159-system": {
+      "1.59.0": [
         "host_B"
       ]
     },
-    "libdhash": {
-      "0.5.0": [
-        "host_A",
+    "boost159-log": {
+      "1.59.0": [
         "host_B"
       ]
     },
-    "at": {
-      "3.1.13": [
-        "host_A",
+    "cups-client": {
+      "1.6.3": [
         "host_B"
       ]
     },
-    "fence-agents-sbd": {
+    "fence-agents-bladecenter": {
       "4.2.1": [
-        "host_A",
         "host_B"
       ]
     },
-    "mpfr": {
-      "3.1.1": [
-        "host_A"
+    "python-custodia": {
+      "0.3.1": [
+        "host_B"
+      ]
+    },
+    "libimagequant": {
+      "2.12.5": [
+        "host_B"
+      ]
+    },
+    "fence-agents-redfish": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "fence-agents-brocade": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "liblognorm5": {
+      "2.0.6": [
+        "host_B",
+        "host_C"
+      ]
+    },
+    "pyusb": {
+      "1.0.0": [
+        "host_B"
+      ]
+    },
+    "fence-agents-apc-snmp": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "libmodman": {
+      "2.0.1": [
+        "host_B"
+      ]
+    },
+    "python-anyjson": {
+      "0.3.3": [
+        "host_B"
+      ]
+    },
+    "libwebp": {
+      "0.3.0": [
+        "host_B"
+      ]
+    },
+    "nano": {
+      "2.3.1": [
+        "host_B"
+      ]
+    },
+    "python-kerberos": {
+      "1.1": [
+        "host_B"
+      ]
+    },
+    "hiera": {
+      "1.3.4": [
+        "host_B"
+      ]
+    },
+    "libcgroup-tools": {
+      "0.41": [
+        "host_B"
+      ]
+    },
+    "python2-troveclient": {
+      "2.14.0": [
+        "host_B"
+      ]
+    },
+    "setools-console": {
+      "3.3.8": [
+        "host_B"
+      ]
+    },
+    "NetworkManager-wifi": {
+      "1.18.0": [
+        "host_B"
+      ]
+    },
+    "ltrace": {
+      "0.7.91": [
+        "host_B"
+      ]
+    },
+    "python2-ptyprocess": {
+      "0.5.2": [
+        "host_B"
+      ]
+    },
+    "lcms2": {
+      "2.6": [
+        "host_B"
+      ]
+    },
+    "subscription-manager-rhsm": {
+      "1.24.13": [
+        "host_B"
+      ]
+    },
+    "tmux": {
+      "1.8": [
+        "host_B"
       ]
     },
     "iptraf-ng": {
@@ -2365,68 +962,1059 @@
         "host_B"
       ]
     },
-    "grub2": {
-      "2.02": [
+    "python-html5lib": {
+      "0.999": [
+        "host_B"
+      ]
+    },
+    "python-amqplib": {
+      "1.0.2": [
+        "host_B"
+      ]
+    },
+    "perf": {
+      "3.10.0": [
+        "host_B"
+      ]
+    },
+    "m4": {
+      "1.4.16": [
+        "host_B"
+      ]
+    },
+    "python-pulp-common": {
+      "2.6.4": [
+        "host_B"
+      ]
+    },
+    "rsyslog-relp": {
+      "8.2004.0": [
+        "host_B"
+      ]
+    },
+    "libICE": {
+      "1.0.9": [
+        "host_B"
+      ]
+    },
+    "oddjob-mkhomedir": {
+      "0.31.5": [
+        "host_B"
+      ]
+    },
+    "fence-agents-wti": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "python2-pygments": {
+      "2.2.0": [
+        "host_B"
+      ]
+    },
+    "http-parser": {
+      "2.7.1": [
+        "host_B"
+      ]
+    },
+    "fence-agents-vmware-soap": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "gsettings-desktop-schemas": {
+      "3.28.0": [
+        "host_B"
+      ]
+    },
+    "python2-ecdsa": {
+      "0.13.3": [
+        "host_B"
+      ]
+    },
+    "mod_ssl": {
+      "2.4.6": [
+        "host_B"
+      ]
+    },
+    "fence-agents-ipmilan": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "fence-agents-ilo2": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "rsyslog-elasticsearch": {
+      "8.2004.0": [
+        "host_B"
+      ],
+      "8.1910.0": [
         "host_C"
       ]
     },
-    "systemd-networkd": {
-      "219": [
-        "host_C"
-      ]
-    },
-    "postfix": {
-      "2.10.1": [
-        "host_C"
-      ]
-    },
-    "libverto-libevent": {
+    "libverto-tevent": {
       "0.2.5": [
+        "host_B"
+      ]
+    },
+    "ldns": {
+      "1.6.16": [
+        "host_B"
+      ]
+    },
+    "libxkbfile": {
+      "1.0.9": [
+        "host_B"
+      ]
+    },
+    "python2-extras": {
+      "1.0.0": [
+        "host_B"
+      ]
+    },
+    "xmlrpc-c-client": {
+      "1.32.5": [
+        "host_B"
+      ]
+    },
+    "libSM": {
+      "1.2.2": [
+        "host_B"
+      ]
+    },
+    "fence-agents-all": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "blktrace": {
+      "1.0.5": [
+        "host_B"
+      ]
+    },
+    "systemd-python": {
+      "219": [
+        "host_B"
+      ]
+    },
+    "libgudev1": {
+      "219": [
+        "host_B"
+      ]
+    },
+    "net-snmp-utils": {
+      "5.7.2": [
+        "host_B"
+      ]
+    },
+    "oddjob": {
+      "0.31.5": [
+        "host_B"
+      ]
+    },
+    "libtool-ltdl": {
+      "2.4.2": [
+        "host_B"
+      ]
+    },
+    "puppet": {
+      "4.8.2": [
+        "host_B"
+      ]
+    },
+    "fence-agents-ilo-mp": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "ed": {
+      "1.9": [
+        "host_B"
+      ]
+    },
+    "facter": {
+      "3.9.3": [
+        "host_B"
+      ]
+    },
+    "fence-agents-hpblade": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "librelp": {
+      "1.6.0": [
+        "host_B"
+      ]
+    },
+    "python-krbV": {
+      "1.0.90": [
+        "host_B"
+      ]
+    },
+    "pytalloc": {
+      "2.1.14": [
+        "host_B"
+      ],
+      "2.1.16": [
         "host_C"
       ]
     },
-    "libnl3-cli": {
-      "3.2.28": [
+    "python-pulp-agent-lib": {
+      "2.6.4": [
+        "host_B"
+      ]
+    },
+    "fence-agents-ipdu": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "libfastjson4": {
+      "0.99.8": [
+        "host_B",
         "host_C"
+      ]
+    },
+    "fence-agents-ifmib": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "ntp": {
+      "4.2.6p5": [
+        "host_B"
+      ]
+    },
+    "lynis": {
+      "2.7.5": [
+        "host_B"
+      ]
+    },
+    "fence-agents-cisco-mds": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "cpp-hocon": {
+      "0.1.6": [
+        "host_B"
+      ]
+    },
+    "usermode": {
+      "1.111": [
+        "host_B"
+      ]
+    },
+    "fence-agents-ibmblade": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "python-XStatic-Angular-Mock": {
+      "1.2.1.1": [
+        "host_B"
+      ]
+    },
+    "ruby-shadow": {
+      "1.4.1": [
+        "host_B"
+      ]
+    },
+    "python2-qpid": {
+      "1.37.0": [
+        "host_B"
+      ]
+    },
+    "OpenIPMI-modalias": {
+      "2.0.27": [
+        "host_B"
+      ]
+    },
+    "ntpdate": {
+      "4.2.6p5": [
+        "host_B"
+      ]
+    },
+    "fence-agents-apc": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "NetworkManager": {
+      "1.18.0": [
+        "host_B"
+      ]
+    },
+    "fence-agents-scsi": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "yaml-cpp": {
+      "0.5.1": [
+        "host_B"
+      ]
+    },
+    "libunwind": {
+      "1.2": [
+        "host_B"
+      ]
+    },
+    "fence-agents-kdump": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "python3-setuptools": {
+      "39.2.0": [
+        "host_B"
+      ]
+    },
+    "librdmacm": {
+      "22.1": [
+        "host_B"
+      ]
+    },
+    "python-sss-murmur": {
+      "1.16.4": [
+        "host_B"
+      ]
+    },
+    "python2-heatclient": {
+      "1.14.1": [
+        "host_B"
+      ]
+    },
+    "NetworkManager-ppp": {
+      "1.18.0": [
+        "host_B"
+      ]
+    },
+    "gpg-pubkey": {
+      "352c64e5": [
+        "host_B"
+      ],
+      "f4a80eb5": [
+        "host_C"
+      ]
+    },
+    "elinks": {
+      "0.12": [
+        "host_B"
+      ]
+    },
+    "ruby-augeas": {
+      "0.5.0": [
+        "host_B"
+      ]
+    },
+    "pulp-rpm-handlers": {
+      "2.6.4": [
+        "host_B"
+      ]
+    },
+    "libproxy": {
+      "0.4.11": [
+        "host_B"
+      ]
+    },
+    "vim-common": {
+      "7.4.629": [
+        "host_B"
+      ]
+    },
+    "openwsman-python": {
+      "2.6.3": [
+        "host_B"
+      ]
+    },
+    "libwsman1": {
+      "2.6.3": [
+        "host_B"
+      ]
+    },
+    "python-isodate": {
+      "0.5.4": [
+        "host_B"
+      ]
+    },
+    "krb5-workstation": {
+      "1.15.1": [
+        "host_B"
+      ]
+    },
+    "jbigkit-libs": {
+      "2.0": [
+        "host_B"
+      ]
+    },
+    "bash-completion": {
+      "2.1": [
+        "host_B"
+      ]
+    },
+    "certmonger": {
+      "0.78.4": [
+        "host_B"
+      ]
+    },
+    "boost159-filesystem": {
+      "1.59.0": [
+        "host_B"
+      ]
+    },
+    "python-tablib": {
+      "0.10.0": [
+        "host_B"
+      ]
+    },
+    "fence-agents-intelmodular": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "fence-agents-compute": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "python-gssapi": {
+      "1.2.0": [
+        "host_B"
+      ]
+    },
+    "patch": {
+      "2.7.1": [
+        "host_B"
+      ]
+    },
+    "libconfig": {
+      "1.4.9": [
+        "host_B"
+      ]
+    },
+    "python2-ceilometerclient": {
+      "2.9.0": [
+        "host_B"
+      ]
+    },
+    "pcre-tools": {
+      "8.32": [
+        "host_B"
+      ]
+    },
+    "bash-completion-extras": {
+      "2.1": [
+        "host_B"
+      ]
+    },
+    "glib-networking": {
+      "2.56.1": [
+        "host_B"
+      ]
+    },
+    "saslwrapper": {
+      "0.22": [
+        "host_B"
+      ]
+    },
+    "python2-saharaclient": {
+      "1.5.0": [
+        "host_B"
+      ]
+    },
+    "fence-agents-vmware-rest": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "python3-pip": {
+      "9.0.3": [
+        "host_B"
+      ]
+    },
+    "fence-agents-common": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "python-yubico": {
+      "1.2.3": [
+        "host_B"
+      ]
+    },
+    "avahi-autoipd": {
+      "0.6.31": [
+        "host_B"
+      ]
+    },
+    "js": {
+      "1.8.5": [
+        "host_B"
+      ]
+    },
+    "python-gofer": {
+      "2.6.2": [
+        "host_B"
+      ]
+    },
+    "sysstat": {
+      "10.1.5": [
+        "host_B"
+      ]
+    },
+    "python2-mistralclient": {
+      "3.3.0": [
+        "host_B"
+      ]
+    },
+    "python-lockfile": {
+      "0.9.1": [
+        "host_B"
+      ]
+    },
+    "python-saslwrapper": {
+      "0.22": [
+        "host_B"
+      ]
+    },
+    "fence-agents-eps": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "fence-virt": {
+      "0.3.2": [
+        "host_B"
+      ]
+    },
+    "rubygem-rgen": {
+      "0.6.6": [
+        "host_B"
+      ]
+    },
+    "iotop": {
+      "0.6": [
+        "host_B"
+      ]
+    },
+    "python-zmq": {
+      "15.3.0": [
+        "host_B"
+      ]
+    },
+    "libXcursor": {
+      "1.1.15": [
+        "host_B"
+      ]
+    },
+    "nss_compat_ossl": {
+      "0.9.6": [
+        "host_B"
+      ]
+    },
+    "fence-agents-ilo-moonshot": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "realmd": {
+      "0.16.1": [
+        "host_B"
+      ]
+    },
+    "boost159-chrono": {
+      "1.59.0": [
+        "host_B"
+      ]
+    },
+    "libselinux-ruby": {
+      "2.5": [
+        "host_B"
+      ]
+    },
+    "python2-pexpect": {
+      "4.6": [
+        "host_B"
+      ]
+    },
+    "leatherman": {
+      "1.3.0": [
+        "host_B"
+      ]
+    },
+    "python-cliff-tablib": {
+      "1.1": [
+        "host_B"
+      ]
+    },
+    "pam_krb5": {
+      "2.4.8": [
+        "host_B"
+      ]
+    },
+    "blas": {
+      "3.4.2": [
+        "host_B"
+      ]
+    },
+    "fence-agents-cisco-ucs": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "fence-agents-emerson": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "fence-agents-eaton-snmp": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "boost159-regex": {
+      "1.59.0": [
+        "host_B"
+      ]
+    },
+    "subscription-manager": {
+      "1.24.13": [
+        "host_B"
+      ]
+    },
+    "whois": {
+      "5.1.1": [
+        "host_B"
+      ]
+    },
+    "subscription-manager-rhsm-certificates": {
+      "1.24.13": [
+        "host_B"
+      ]
+    },
+    "gnutls-utils": {
+      "3.3.29": [
+        "host_B"
+      ]
+    },
+    "libsoup": {
+      "2.62.2": [
+        "host_B"
+      ]
+    },
+    "python-nss": {
+      "0.16.0": [
+        "host_B"
+      ]
+    },
+    "m2crypto": {
+      "0.21.1": [
+        "host_B"
+      ]
+    },
+    "ipmitool": {
+      "1.8.18": [
+        "host_B"
+      ]
+    },
+    "autogen-libopts": {
+      "5.18": [
+        "host_B"
+      ]
+    },
+    "telegraf": {
+      "1.14.4": [
+        "host_B"
+      ]
+    },
+    "VMware-Log-Insight-Agent": {
+      "3.6.0": [
+        "host_B"
+      ]
+    },
+    "xorg-x11-apps": {
+      "7.7": [
+        "host_B"
+      ]
+    },
+    "libnl": {
+      "1.1.4": [
+        "host_B"
+      ]
+    },
+    "boost159-program-options": {
+      "1.59.0": [
+        "host_B"
+      ]
+    },
+    "lapack": {
+      "3.4.2": [
+        "host_B"
+      ]
+    },
+    "python-dmidecode": {
+      "3.12.2": [
+        "host_B"
+      ]
+    },
+    "python2-gflags": {
+      "2.0": [
+        "host_B"
+      ]
+    },
+    "rsyslog-kafka": {
+      "8.2004.0": [
+        "host_B"
+      ],
+      "8.1910.0": [
+        "host_C"
+      ]
+    },
+    "python-qrcode-core": {
+      "5.0.1": [
+        "host_B"
+      ]
+    },
+    "nmap": {
+      "6.40": [
+        "host_B"
+      ]
+    },
+    "fence-agents-rsb": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "fence-agents-rsa": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "python3": {
+      "3.6.8": [
+        "host_B"
+      ]
+    },
+    "numactl": {
+      "2.0.12": [
+        "host_B"
+      ]
+    },
+    "xmlrpc-c": {
+      "1.32.5": [
+        "host_B"
+      ]
+    },
+    "OpenIPMI": {
+      "2.0.27": [
+        "host_B"
+      ]
+    },
+    "boost159-locale": {
+      "1.59.0": [
+        "host_B"
+      ]
+    },
+    "xorg-x11-xauth": {
+      "1.0.9": [
+        "host_B"
+      ]
+    },
+    "libXfixes": {
+      "5.0.3": [
+        "host_B"
+      ]
+    },
+    "libXaw": {
+      "1.0.13": [
+        "host_B"
+      ]
+    },
+    "vim-enhanced": {
+      "7.4.629": [
+        "host_B"
+      ]
+    },
+    "libXrender": {
+      "0.9.10": [
+        "host_B"
+      ]
+    },
+    "fence-agents-mpath": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "libfontenc": {
+      "1.1.3": [
+        "host_B"
+      ]
+    },
+    "python-pulp-rpm-common": {
+      "2.6.4": [
+        "host_B"
+      ]
+    },
+    "fence-agents-drac5": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "boost159-atomic": {
+      "1.59.0": [
+        "host_B"
+      ]
+    },
+    "fence-agents-heuristics-ping": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "boost159-date-time": {
+      "1.59.0": [
+        "host_B"
+      ]
+    },
+    "python2-pycryptodomex": {
+      "3.7.3": [
+        "host_B"
+      ]
+    },
+    "fence-agents-ilo-ssh": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "libkadm5": {
+      "1.15.1": [
+        "host_B"
+      ]
+    },
+    "redhat-lsb-submod-security": {
+      "4.1": [
+        "host_B"
+      ]
+    },
+    "rsyslog-mmjsonparse": {
+      "8.2004.0": [
+        "host_B"
+      ],
+      "8.1910.0": [
+        "host_C"
+      ]
+    },
+    "hesiod": {
+      "3.2.1": [
+        "host_B"
+      ]
+    },
+    "fence-agents-amt-ws": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "libtiff": {
+      "4.0.3": [
+        "host_B"
+      ]
+    },
+    "sos": {
+      "3.7": [
+        "host_B"
+      ]
+    },
+    "ppp": {
+      "2.4.5": [
+        "host_B"
+      ]
+    },
+    "gdisk": {
+      "0.8.10": [
+        "host_B"
+      ]
+    },
+    "libXxf86vm": {
+      "1.1.4": [
+        "host_B"
+      ]
+    },
+    "python2-markdown": {
+      "2.4.1": [
+        "host_B"
+      ]
+    },
+    "python-XStatic-QUnit": {
+      "1.14.0.2": [
+        "host_B"
+      ]
+    },
+    "PyPAM": {
+      "0.5.0": [
+        "host_B"
+      ]
+    },
+    "python-syspurpose": {
+      "1.24.13": [
+        "host_B"
+      ]
+    },
+    "python-ethtool": {
+      "0.8": [
+        "host_B"
+      ]
+    },
+    "spax": {
+      "1.5.2": [
+        "host_B"
+      ]
+    },
+    "libXft": {
+      "2.3.2": [
+        "host_B"
+      ]
+    },
+    "yum-plugin-remove-with-leaves": {
+      "1.1.31": [
+        "host_B"
+      ]
+    },
+    "boost159-thread": {
+      "1.59.0": [
+        "host_B"
+      ]
+    },
+    "vim-filesystem": {
+      "7.4.629": [
+        "host_B"
+      ]
+    },
+    "atop": {
+      "2.4.0": [
+        "host_B"
+      ]
+    },
+    "openjpeg2": {
+      "2.3.1": [
+        "host_B"
+      ]
+    },
+    "libXt": {
+      "1.1.5": [
+        "host_B"
+      ]
+    },
+    "libXext": {
+      "1.3.3": [
+        "host_B"
+      ]
+    },
+    "mtr": {
+      "0.85": [
+        "host_B"
+      ]
+    },
+    "python-gofer-proton": {
+      "2.6.2": [
+        "host_B"
+      ]
+    },
+    "autofs": {
+      "5.0.7": [
+        "host_B"
+      ]
+    },
+    "mailx": {
+      "12.5": [
+        "host_B"
+      ]
+    },
+    "gnutls-dane": {
+      "3.3.29": [
+        "host_B"
+      ]
+    },
+    "python2-pillow": {
+      "4.0.0": [
+        "host_B"
+      ]
+    },
+    "libXmu": {
+      "1.1.2": [
+        "host_B"
+      ]
+    },
+    "ruby-facter": {
+      "3.9.3": [
+        "host_B"
+      ]
+    },
+    "python2-olefile": {
+      "0.46": [
+        "host_B"
+      ]
+    },
+    "libicu": {
+      "50.2": [
+        "host_B"
+      ]
+    },
+    "time": {
+      "1.7": [
+        "host_B"
+      ]
+    },
+    "python-cheetah": {
+      "2.4.4": [
+        "host_B"
+      ]
+    },
+    "python3-libs": {
+      "3.6.8": [
+        "host_B"
+      ]
+    },
+    "fence-agents-rhevm": {
+      "4.2.1": [
+        "host_B"
+      ]
+    },
+    "OpenIPMI-libs": {
+      "2.0.27": [
+        "host_B"
+      ]
+    },
+    "python-posix_ipc": {
+      "0.9.8": [
+        "host_B"
+      ]
+    },
+    "NetworkManager-tui": {
+      "1.18.0": [
+        "host_B"
+      ]
+    },
+    "libdhash": {
+      "0.5.0": [
+        "host_B"
+      ]
+    },
+    "at": {
+      "3.1.13": [
+        "host_B"
+      ]
+    },
+    "fence-agents-sbd": {
+      "4.2.1": [
+        "host_B"
       ]
     },
     "python-tdb": {
       "1.3.18": [
-        "host_C"
-      ]
-    },
-    "python2-zmq": {
-      "14.7.0": [
-        "host_C"
-      ]
-    },
-    "grub2-pc": {
-      "2.02": [
-        "host_C"
-      ]
-    },
-    "teamd": {
-      "1.27": [
-        "host_C"
-      ]
-    },
-    "virt-top": {
-      "1.0.8": [
-        "host_C"
-      ]
-    },
-    "libteam": {
-      "1.27": [
-        "host_C"
-      ]
-    },
-    "lldpd": {
-      "1.0.4": [
-        "host_C"
-      ]
-    },
-    "python-extras": {
-      "1.0.0": [
         "host_C"
       ]
     },
@@ -2435,26 +2023,22 @@
         "host_C"
       ]
     },
-    "iwl7265-firmware": {
-      "22.0.7.0": [
-        "host_C"
-      ]
-    },
-    "grub2-pc-modules": {
-      "2.02": [
-        "host_C"
-      ]
-    },
     "pyldb": {
       "1.5.4": [
         "host_C"
       ]
-    },
-    "chrony": {
-      "3.4": [
-        "host_C"
-      ]
     }
   },
-  "system": {}
+  "system": {},
+  "mounts": {
+    "/": {
+      "/dev/sda3": [
+        "host_A",
+        "host_C"
+      ],
+      "/dev/mapper/vg_system-lv_root": [
+        "host_B"
+      ]
+    }
+  }
 }

@@ -5,6 +5,7 @@ Exmaple reports from `playbook/audit_pckg/.report`:
 1. [packages](https://htmlpreview.github.io/?https://github.com/HappyFX/ansible_audit_module/blob/master/playbook/audit_pckg/reports/html/packages.html)
 1. [services](https://htmlpreview.github.io/?https://github.com/HappyFX/ansible_audit_module/blob/master/playbook/audit_pckg/reports/html/services.html)
 1. [system](https://htmlpreview.github.io/?https://github.com/HappyFX/ansible_audit_module/blob/master/playbook/audit_pckg/reports/html/system.html)
+1. [mount](https://htmlpreview.github.io/?https://github.com/HappyFX/ansible_audit_module/blob/master/playbook/audit_pckg/reports/html/mount.html)
 
 ## How to run
 

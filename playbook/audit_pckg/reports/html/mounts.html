@@ -1,0 +1,18 @@
+<body style="background: #e3e8ec;">
+<h1>Audit: mounts</h1>
+<pre>host_A</pre>
+<pre>host_B</pre>
+<pre>host_C</pre>
+<h2>Diff</h2>
+<details style="border: 1px solid #404653; background: #fff;">
+  <summary>/</summary>
+<pre style="background: #8fcbe8;">/dev/sda3: host_A</pre>
+<pre style="background: #8fcbe8;">/dev/sda3: host_C</pre>
+<pre style="background: #faaeae;">absent: host_B</pre>
+<hr>
+<pre style="background: #8fcbe8;">/dev/mapper/vg_system-lv_root: host_B</pre>
+<pre style="background: #faaeae;">absent: host_A</pre>
+<pre style="background: #faaeae;">absent: host_C</pre>
+<hr>
+</details>
+</body>

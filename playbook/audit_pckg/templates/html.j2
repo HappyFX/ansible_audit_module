@@ -1,23 +1,29 @@
-<h1>Audit</h1>
+<body style="background: #e3e8ec;">
+<h1>Audit: {{ item.key }}</h1>
 {% for audit_host in ansible_play_hosts %}
 <pre>{{ audit_host }}</pre>
 {% endfor %}
 {% if item.value %}
-<h2>See diff below</h2>
+<h2>Diff</h2>
 {%   for name, data in item.value.items() %}
-<details>
+<details style="border: 1px solid #404653; background: #fff;">
   <summary>{{ name }}</summary>
-{%     for state, hosts in data.items() %}
+{%     for state, my_hosts in data.items() %}
 {%       for host in ansible_play_hosts %}
-{%         if host in hosts %}
-<pre style="background: orange;">{{ state }}: {{ host }}</pre>
-{%         else %}
-<pre style="background: red;">absent: {{ host }}</pre>
+{%         if host in my_hosts %}
+<pre style="background: #8fcbe8;">{{ state }}: {{ host }}</pre>
 {%         endif %}
 {%       endfor %}
+{%       for host in ansible_play_hosts %}
+{%         if host not in my_hosts %}
+<pre style="background: #faaeae;">absent: {{ host }}</pre>
+{%         endif %}
+{%       endfor %}
+<hr>
 {%     endfor %}
 </details>
 {%   endfor %}
 {% else %}
-<h2>No diff</h2>
+<h2>Equal</h2>
 {% endif %}
+</body>

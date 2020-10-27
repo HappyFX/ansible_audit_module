@@ -41,13 +41,24 @@ def handler_by_key_in_list(data: dict, params: dict) -> dict:
     result = set_result(result=result, key=result_key, value=value)
   return result
 
+def handler_in_list_by_key(data: list, params: dict) -> dict:
+  key = params.get('key_name')
+  filter_key = params.get('filter').get('key')
+  result = {}
+  for values in data:
+    result_key = values.get(filter_key)
+    value = values.get(key)
+    if None == value: continue
+    result = set_result(result=result, key=result_key, value=value)
+  return result
+
 def handler_direct(data: dict, params: dict) -> dict:
   result = {}
   for result_key, value in data.items():
     result = set_result(result=result, key=result_key, value=value)
   return result
 
-def set_result(result: dict, key: str, value: str):
+def set_result(result: dict, key: str, value: str) -> dict:
   result.setdefault(key, value)
   return result
 
@@ -65,6 +76,15 @@ def handle_hostvars(params: dict) -> dict:
     "system": {
       'handler_type': handler_direct,
     },
+    'mounts': {
+      'filter': {
+        'key': 'mount',
+        'var': 'mounts_filter',
+      },
+      'handler_type': handler_in_list_by_key,
+      'list_index': 0,
+      'key_name': 'device',
+    },
   }
   dest_raw = params.get('dest_raw')
   dest_result = params.get('dest_result')
@@ -79,6 +99,13 @@ def handle_hostvars(params: dict) -> dict:
     )
     for host, values in data_set.items():
       result.setdefault(host, {})
+      is_filter = function_params.get('filter')
+      if is_filter != None:
+        values = filter_dict(
+          values = values,
+          filter_val=params.get(is_filter.get('var')),
+          filter_key=is_filter.get('key'),
+        )
       combain_result = function_params.get('handler_type')(
         data=values,
         params=function_params
@@ -91,6 +118,17 @@ def handle_hostvars(params: dict) -> dict:
     file_name='result'
   )
   return result_by_modules
+
+def filter_dict(values: dict, filter_val: list, filter_key: str) -> dict:
+  result = []
+  if filter == {}:
+    result = values
+  else:
+    for data in values:
+      search = data.get(filter_key)
+      if search != None and search in filter_val:
+        result.append(data)
+  return result
 
 def write_json(data_json: dict, dest_folder: str, file_name: str) -> None:
   if dest_folder:
@@ -107,6 +145,14 @@ def main():
     "packages": {
       "required": False,
       "type": "dict",
+    },
+    "mounts": {
+      "required": False,
+      "type": "dict",
+    },
+    "mounts_filter": {
+      "required": False,
+      "type": "list",
     },
     "system": {
       "required": False,

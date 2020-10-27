@@ -1,10 +1,10 @@
 {
   "host_A": {
-    "sshd-keygen.service": {
-      "status": "static",
+    "openstack-nova-console.service": {
+      "status": "masked",
       "source": "systemd",
-      "state": "stopped",
-      "name": "sshd-keygen.service"
+      "state": "unknown",
+      "name": "openstack-nova-console.service"
     },
     "systemd-machine-id-commit.service": {
       "status": "static",
@@ -30,17 +30,11 @@
       "state": "stopped",
       "name": "systemd-readahead-collect.service"
     },
-    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_tmp.service": {
-      "status": "unknown",
+    "sshd-keygen.service": {
+      "status": "static",
       "source": "systemd",
       "state": "stopped",
-      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_tmp.service"
-    },
-    "openstack-nova-console.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "running",
-      "name": "openstack-nova-console.service"
+      "name": "sshd-keygen.service"
     },
     "mariadb@.service": {
       "status": "disabled",
@@ -54,17 +48,17 @@
       "state": "unknown",
       "name": "plymouth-kexec.service"
     },
-    "dnsmasq.service": {
+    "systemd-networkd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-networkd.service"
+    },
+    "openstack-swift-object-updater@.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "dnsmasq.service"
-    },
-    "systemd-update-utmp-runlevel.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "systemd-update-utmp-runlevel.service"
+      "name": "openstack-swift-object-updater@.service"
     },
     "neutron-server.service": {
       "status": "enabled",
@@ -90,23 +84,11 @@
       "state": "stopped",
       "name": "nfs-mountd.service"
     },
-    "rhsm-facts.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "rhsm-facts.service"
-    },
-    "systemd-rfkill@.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "systemd-rfkill@.service"
-    },
-    "systemd-random-seed.service": {
-      "status": "static",
+    "iscsi.service": {
+      "status": "enabled",
       "source": "systemd",
       "state": "stopped",
-      "name": "systemd-random-seed.service"
+      "name": "iscsi.service"
     },
     "saslauthd.service": {
       "status": "disabled",
@@ -114,23 +96,11 @@
       "state": "unknown",
       "name": "saslauthd.service"
     },
-    "atd.service": {
-      "status": "enabled",
-      "source": "systemd",
-      "state": "running",
-      "name": "atd.service"
-    },
     "cpupower.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "stopped",
       "name": "cpupower.service"
-    },
-    "rsyslog.service": {
-      "status": "enabled",
-      "source": "systemd",
-      "state": "running",
-      "name": "rsyslog.service"
     },
     "mariadb.service": {
       "status": "enabled",
@@ -162,29 +132,17 @@
       "state": "stopped",
       "name": "systemd-shutdownd.service"
     },
-    "ipmievd.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "ipmievd.service"
-    },
     "plymouth-quit-wait.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "stopped",
       "name": "plymouth-quit-wait.service"
     },
-    "neutron-destroy-patch-ports.service": {
-      "status": "disabled",
+    "nfs-lock.service": {
+      "status": "static",
       "source": "systemd",
       "state": "unknown",
-      "name": "neutron-destroy-patch-ports.service"
-    },
-    "openstack-exporter.service": {
-      "status": "enabled",
-      "source": "systemd",
-      "state": "running",
-      "name": "openstack-exporter.service"
+      "name": "nfs-lock.service"
     },
     "blk-availability.service": {
       "status": "disabled",
@@ -216,6 +174,12 @@
       "state": "unknown",
       "name": "nfs-rquotad.service"
     },
+    "i40e_lldp.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "i40e_lldp.service"
+    },
     "dracut-shutdown.service": {
       "status": "static",
       "source": "systemd",
@@ -246,12 +210,6 @@
       "state": "unknown",
       "name": "arp-ethers.service"
     },
-    "systemd-localed.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "systemd-localed.service"
-    },
     "epmd@.service": {
       "status": "disabled",
       "source": "systemd",
@@ -276,11 +234,11 @@
       "state": "stopped",
       "name": "nfs-idmapd.service"
     },
-    "nfs-config.service": {
-      "status": "static",
+    "openstack-swift-object-expirer.service": {
+      "status": "enabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "nfs-config.service"
+      "state": "running",
+      "name": "openstack-swift-object-expirer.service"
     },
     "openvswitch.service": {
       "status": "enabled",
@@ -294,11 +252,11 @@
       "state": "stopped",
       "name": "systemd-sysctl.service"
     },
-    "fstrim.service": {
-      "status": "static",
+    "openstack-swift-object-replicator@.service": {
+      "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "fstrim.service"
+      "name": "openstack-swift-object-replicator@.service"
     },
     "target.service": {
       "status": "disabled",
@@ -306,29 +264,23 @@
       "state": "unknown",
       "name": "target.service"
     },
-    "nbd@.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "nbd@.service"
-    },
-    "oddjobd.service": {
+    "mysql.service": {
       "status": "enabled",
       "source": "systemd",
-      "state": "running",
-      "name": "oddjobd.service"
-    },
-    "consul-server.service": {
-      "status": "disabled",
-      "source": "systemd",
       "state": "unknown",
-      "name": "consul-server.service"
+      "name": "mysql.service"
     },
     "systemd-halt.service": {
       "status": "static",
       "source": "systemd",
       "state": "unknown",
       "name": "systemd-halt.service"
+    },
+    "chrony-dnssrv@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "chrony-dnssrv@.service"
     },
     "rdisc.service": {
       "status": "disabled",
@@ -384,17 +336,29 @@
       "state": "unknown",
       "name": "rpcidmapd.service"
     },
-    "rhel-dmesg.service": {
-      "status": "enabled",
+    "openstack-swift-account@.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "rhel-dmesg.service"
+      "state": "unknown",
+      "name": "openstack-swift-account@.service"
     },
     "tcsd.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
       "name": "tcsd.service"
+    },
+    "regen_ovs.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "regen_ovs.service"
+    },
+    "rhel-dmesg.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-dmesg.service"
     },
     "debug-shell.service": {
       "status": "disabled",
@@ -417,7 +381,7 @@
     "brandbot.service": {
       "status": "static",
       "source": "systemd",
-      "state": "stopped",
+      "state": "unknown",
       "name": "brandbot.service"
     },
     "messagebus.service": {
@@ -480,11 +444,23 @@
       "state": "stopped",
       "name": "iscsiuio.service"
     },
+    "openstack-swift-account-auditor@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-account-auditor@.service"
+    },
     "lvm2-monitor.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "stopped",
       "name": "lvm2-monitor.service"
+    },
+    "prometheus-node-exporter-openstack.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "prometheus-node-exporter-openstack.service"
     },
     "initrd-switch-root.service": {
       "status": "static",
@@ -507,14 +483,14 @@
     "unbound-anchor.service": {
       "status": "static",
       "source": "systemd",
-      "state": "unknown",
+      "state": "stopped",
       "name": "unbound-anchor.service"
     },
-    "zabbix-agent.service": {
+    "openstack-swift-container-auditor.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "running",
-      "name": "zabbix-agent.service"
+      "name": "openstack-swift-container-auditor.service"
     },
     "systemd-modules-load.service": {
       "status": "static",
@@ -522,29 +498,17 @@
       "state": "stopped",
       "name": "systemd-modules-load.service"
     },
-    "puppet.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "puppet.service"
-    },
     "radvd.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
       "name": "radvd.service"
     },
-    "nfs.service": {
-      "status": "disabled",
+    "openstack-swift-object.service": {
+      "status": "enabled",
       "source": "systemd",
-      "state": "unknown",
-      "name": "nfs.service"
-    },
-    "lvm2-pvscan@253:5.service": {
-      "status": "unknown",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "lvm2-pvscan@253:5.service"
+      "state": "running",
+      "name": "openstack-swift-object.service"
     },
     "memcached.service": {
       "status": "enabled",
@@ -570,11 +534,11 @@
       "state": "running",
       "name": "openstack-cinder-api.service"
     },
-    "lvm2-pvscan@253:4.service": {
-      "status": "unknown",
+    "postfix.service": {
+      "status": "enabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "lvm2-pvscan@253:4.service"
+      "state": "running",
+      "name": "postfix.service"
     },
     "dbus-org.freedesktop.timedate1.service": {
       "status": "static",
@@ -594,23 +558,23 @@
       "state": "stopped",
       "name": "systemd-journal-catalog-update.service"
     },
-    "NetworkManager-wait-online.service": {
+    "rsyslog.service": {
       "status": "enabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "NetworkManager-wait-online.service"
+      "state": "running",
+      "name": "rsyslog.service"
     },
-    "rescue.service": {
-      "status": "static",
+    "openstack-swift-object-replicator.service": {
+      "status": "enabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "rescue.service"
+      "state": "running",
+      "name": "openstack-swift-object-replicator.service"
     },
-    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_var.service": {
-      "status": "unknown",
+    "openstack-exporter.service": {
+      "status": "enabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_var.service"
+      "state": "running",
+      "name": "openstack-exporter.service"
     },
     "conntrackd.service": {
       "status": "disabled",
@@ -624,11 +588,11 @@
       "state": "unknown",
       "name": "dbus-org.freedesktop.import1.service"
     },
-    "nova-placement.service": {
-      "status": "enabled",
+    "rescue.service": {
+      "status": "static",
       "source": "systemd",
-      "state": "running",
-      "name": "nova-placement.service"
+      "state": "stopped",
+      "name": "rescue.service"
     },
     "node-exporter.service": {
       "status": "enabled",
@@ -659,6 +623,12 @@
       "source": "systemd",
       "state": "running",
       "name": "tuned.service"
+    },
+    "lldpd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "lldpd.service"
     },
     "systemd-poweroff.service": {
       "status": "static",
@@ -702,11 +672,23 @@
       "state": "unknown",
       "name": "plymouth-switch-root.service"
     },
+    "openstack-swift-account-auditor.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-account-auditor.service"
+    },
     "gssproxy.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "running",
       "name": "gssproxy.service"
+    },
+    "systemd-importd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-importd.service"
     },
     "systemd-fsck-root.service": {
       "status": "static",
@@ -714,17 +696,11 @@
       "state": "stopped",
       "name": "systemd-fsck-root.service"
     },
-    "nfs-secure.service": {
-      "status": "static",
+    "openstack-swift-object-auditor.service": {
+      "status": "enabled",
       "source": "systemd",
-      "state": "unknown",
-      "name": "nfs-secure.service"
-    },
-    "rhsm.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "rhsm.service"
+      "state": "running",
+      "name": "openstack-swift-object-auditor.service"
     },
     "rc-local.service": {
       "status": "static",
@@ -732,11 +708,11 @@
       "state": "stopped",
       "name": "rc-local.service"
     },
-    "systemd-hwdb-update.service": {
-      "status": "static",
+    "openstack-swift-object-reconstructor.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "systemd-hwdb-update.service"
+      "state": "unknown",
+      "name": "openstack-swift-object-reconstructor.service"
     },
     "initrd-parse-etc.service": {
       "status": "static",
@@ -750,12 +726,6 @@
       "state": "unknown",
       "name": "dbus-org.freedesktop.machine1.service"
     },
-    "httpd.service": {
-      "status": "masked",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "httpd.service"
-    },
     "neutron-ovs-cleanup.service": {
       "status": "disabled",
       "source": "systemd",
@@ -768,23 +738,17 @@
       "state": "unknown",
       "name": "systemd-timedated.service"
     },
-    "atopacct.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "atopacct.service"
-    },
     "halt-local.service": {
       "status": "static",
       "source": "systemd",
       "state": "unknown",
       "name": "halt-local.service"
     },
-    "ipmi.service": {
-      "status": "disabled",
+    "systemd-rfkill@.service": {
+      "status": "static",
       "source": "systemd",
       "state": "unknown",
-      "name": "ipmi.service"
+      "name": "systemd-rfkill@.service"
     },
     "neutron-netns-cleanup.service": {
       "status": "disabled",
@@ -811,10 +775,16 @@
       "name": "mysqld.service"
     },
     "rsyncd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rsyncd.service"
+    },
+    "openstack-swift-container@.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "rsyncd.service"
+      "name": "openstack-swift-container@.service"
     },
     "systemd-suspend.service": {
       "status": "static",
@@ -822,11 +792,11 @@
       "state": "unknown",
       "name": "systemd-suspend.service"
     },
-    "maxscale.service": {
-      "status": "enabled",
+    "polkit.service": {
+      "status": "static",
       "source": "systemd",
       "state": "running",
-      "name": "maxscale.service"
+      "name": "polkit.service"
     },
     "initrd-cleanup.service": {
       "status": "static",
@@ -843,7 +813,7 @@
     "dm-event.service": {
       "status": "static",
       "source": "systemd",
-      "state": "running",
+      "state": "stopped",
       "name": "dm-event.service"
     },
     "rpcgssd.service": {
@@ -876,11 +846,11 @@
       "state": "unknown",
       "name": "getty@.service"
     },
-    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_opt.service": {
-      "status": "unknown",
+    "systemd-random-seed.service": {
+      "status": "static",
       "source": "systemd",
       "state": "stopped",
-      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_opt.service"
+      "name": "systemd-random-seed.service"
     },
     "plymouth-halt.service": {
       "status": "disabled",
@@ -888,17 +858,23 @@
       "state": "unknown",
       "name": "plymouth-halt.service"
     },
-    "iscsi.service": {
-      "status": "enabled",
+    "nfs-secure.service": {
+      "status": "static",
       "source": "systemd",
-      "state": "stopped",
-      "name": "iscsi.service"
+      "state": "unknown",
+      "name": "nfs-secure.service"
     },
     "neutron-dhcp-agent.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "running",
       "name": "neutron-dhcp-agent.service"
+    },
+    "ebtables.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "ebtables.service"
     },
     "systemd-journal-flush.service": {
       "status": "static",
@@ -918,12 +894,6 @@
       "state": "running",
       "name": "mysqld-exporter.service"
     },
-    "rdma.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "rdma.service"
-    },
     "systemd-machined.service": {
       "status": "static",
       "source": "systemd",
@@ -936,17 +906,11 @@
       "state": "unknown",
       "name": "systemd-backlight@.service"
     },
-    "realmd.service": {
-      "status": "static",
+    "systemd-networkd-wait-online.service": {
+      "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "realmd.service"
-    },
-    "ntpd.service": {
-      "status": "enabled",
-      "source": "systemd",
-      "state": "running",
-      "name": "ntpd.service"
+      "name": "systemd-networkd-wait-online.service"
     },
     "rdma-load-modules@.service": {
       "status": "static",
@@ -984,17 +948,17 @@
       "state": "stopped",
       "name": "systemd-reboot.service"
     },
-    "puppetagent.service": {
+    "teamd@.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "teamd@.service"
+    },
+    "openstack-swift-container-updater@.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "puppetagent.service"
-    },
-    "openstack-cinder-volume.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "running",
-      "name": "openstack-cinder-volume.service"
+      "name": "openstack-swift-container-updater@.service"
     },
     "dracut-initqueue.service": {
       "status": "static",
@@ -1007,6 +971,18 @@
       "source": "systemd",
       "state": "stopped",
       "name": "systemd-udev-trigger.service"
+    },
+    "openstack-swift-container.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-container.service"
+    },
+    "systemd-hwdb-update.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-hwdb-update.service"
     },
     "systemd-ask-password-console.service": {
       "status": "static",
@@ -1026,17 +1002,17 @@
       "state": "running",
       "name": "openstack-glance-api.service"
     },
-    "*": {
-      "status": "unknown",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "*"
-    },
-    "nfs-lock.service": {
+    "nfs-config.service": {
       "status": "static",
       "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-config.service"
+    },
+    "neutron-destroy-patch-ports.service": {
+      "status": "disabled",
+      "source": "systemd",
       "state": "unknown",
-      "name": "nfs-lock.service"
+      "name": "neutron-destroy-patch-ports.service"
     },
     "ovsdb-server.service": {
       "status": "static",
@@ -1068,11 +1044,11 @@
       "state": "unknown",
       "name": "openstack-glance-scrubber.service"
     },
-    "rhel-autorelabel.service": {
-      "status": "enabled",
+    "openstack-swift-container-sync@.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "rhel-autorelabel.service"
+      "state": "unknown",
+      "name": "openstack-swift-container-sync@.service"
     },
     "systemd-update-utmp.service": {
       "status": "static",
@@ -1080,17 +1056,11 @@
       "state": "stopped",
       "name": "systemd-update-utmp.service"
     },
-    "systemd-importd.service": {
-      "status": "static",
+    "wpa_supplicant.service": {
+      "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "systemd-importd.service"
-    },
-    "telegraf.service": {
-      "status": "enabled",
-      "source": "systemd",
-      "state": "running",
-      "name": "telegraf.service"
+      "name": "wpa_supplicant.service"
     },
     "rhel-readonly.service": {
       "status": "enabled",
@@ -1122,11 +1092,17 @@
       "state": "running",
       "name": "epmd@0.0.0.0.service"
     },
-    "ntpdate.service": {
-      "status": "disabled",
+    "auditd.service": {
+      "status": "enabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "ntpdate.service"
+      "state": "running",
+      "name": "auditd.service"
+    },
+    "openstack-swift-object-updater.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-object-updater.service"
     },
     "plymouth-read-write.service": {
       "status": "disabled",
@@ -1152,17 +1128,11 @@
       "state": "running",
       "name": "lvm2-lvmetad.service"
     },
-    "cgred.service": {
+    "crm_mon.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "cgred.service"
-    },
-    "rhsmcertd.service": {
-      "status": "enabled",
-      "source": "systemd",
-      "state": "running",
-      "name": "rhsmcertd.service"
+      "name": "crm_mon.service"
     },
     "iscsi-shutdown.service": {
       "status": "static",
@@ -1170,10 +1140,16 @@
       "state": "stopped",
       "name": "iscsi-shutdown.service"
     },
+    "openstack-swift-account-reaper.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-account-reaper.service"
+    },
     "rpc-gssd.service": {
       "status": "static",
       "source": "systemd",
-      "state": "running",
+      "state": "stopped",
       "name": "rpc-gssd.service"
     },
     "systemd-nspawn@.service": {
@@ -1188,6 +1164,24 @@
       "state": "unknown",
       "name": "plymouth-reboot.service"
     },
+    "openstack-swift-container-replicator.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-container-replicator.service"
+    },
+    "chrony-wait.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "chrony-wait.service"
+    },
+    "openstack-swift-proxy.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-proxy.service"
+    },
     "systemd-tmpfiles-setup-dev.service": {
       "status": "static",
       "source": "systemd",
@@ -1200,14 +1194,14 @@
       "state": "unknown",
       "name": "autovt@.service"
     },
-    "libvirt-guests.service": {
+    "openstack-swift-account-replicator@.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "libvirt-guests.service"
+      "name": "openstack-swift-account-replicator@.service"
     },
     "rpcbind.service": {
-      "status": "disabled",
+      "status": "enabled",
       "source": "systemd",
       "state": "running",
       "name": "rpcbind.service"
@@ -1217,6 +1211,12 @@
       "source": "systemd",
       "state": "unknown",
       "name": "iprupdate.service"
+    },
+    "openstack-swift-container-sync.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-container-sync.service"
     },
     "kmod-static-nodes.service": {
       "status": "static",
@@ -1248,17 +1248,23 @@
       "state": "running",
       "name": "openstack-glance-registry.service"
     },
-    "liagentd.service": {
-      "status": "enabled",
+    "fstrim.service": {
+      "status": "static",
       "source": "systemd",
-      "state": "stopped",
-      "name": "liagentd.service"
+      "state": "unknown",
+      "name": "fstrim.service"
     },
     "container-getty@.service": {
       "status": "static",
       "source": "systemd",
       "state": "unknown",
       "name": "container-getty@.service"
+    },
+    "zabbix-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "zabbix-agent.service"
     },
     "openstack-nova-scheduler.service": {
       "status": "enabled",
@@ -1272,41 +1278,41 @@
       "state": "unknown",
       "name": "initrd-udevadm-cleanup-db.service"
     },
-    "NetworkManager.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "NetworkManager.service"
-    },
-    "polkit.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "running",
-      "name": "polkit.service"
-    },
-    "prometheus-node-exporter-openstack.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "prometheus-node-exporter-openstack.service"
-    },
-    "ebtables.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "ebtables.service"
-    },
-    "rhel-loadmodules.service": {
+    "openstack-swift-container-updater.service": {
       "status": "enabled",
       "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-container-updater.service"
+    },
+    "maxscale.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "maxscale.service"
+    },
+    "chronyd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "chronyd.service"
+    },
+    "httpd.service": {
+      "status": "disabled",
+      "source": "systemd",
       "state": "stopped",
-      "name": "rhel-loadmodules.service"
+      "name": "httpd.service"
     },
     "dracut-pre-trigger.service": {
       "status": "static",
       "source": "systemd",
       "state": "unknown",
       "name": "dracut-pre-trigger.service"
+    },
+    "openstack-swift-account-reaper@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-account-reaper@.service"
     },
     "systemd-hybrid-sleep.service": {
       "status": "static",
@@ -1326,11 +1332,29 @@
       "state": "running",
       "name": "openstack-nova-conductor.service"
     },
+    "nova-placement.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "nova-placement.service"
+    },
     "kdump.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "stopped",
       "name": "kdump.service"
+    },
+    "openstack-swift-container-replicator@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-container-replicator@.service"
+    },
+    "openstack-swift-container-auditor@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-container-auditor@.service"
     },
     "netconsole-nop.service": {
       "status": "enabled",
@@ -1344,17 +1368,23 @@
       "state": "running",
       "name": "nginx.service"
     },
-    "iops_poller.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "iops_poller.service"
-    },
     "systemd-tmpfiles-setup.service": {
       "status": "static",
       "source": "systemd",
       "state": "stopped",
       "name": "systemd-tmpfiles-setup.service"
+    },
+    "dbus-org.freedesktop.network1.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dbus-org.freedesktop.network1.service"
+    },
+    "openstack-swift-account-replicator.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-account-replicator.service"
     },
     "systemd-fsck@.service": {
       "status": "static",
@@ -1368,23 +1398,23 @@
       "state": "unknown",
       "name": "openstack-nova-metadata-api.service"
     },
-    "liupdaterd.service": {
-      "status": "enabled",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "liupdaterd.service"
-    },
-    "wpa_supplicant.service": {
+    "openstack-swift-object-reconstructor@.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "wpa_supplicant.service"
+      "name": "openstack-swift-object-reconstructor@.service"
     },
-    "cgconfig.service": {
+    "nfs.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "cgconfig.service"
+      "name": "nfs.service"
+    },
+    "dnsmasq.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "dnsmasq.service"
     },
     "openstack-nova-xvpvncproxy.service": {
       "status": "disabled",
@@ -1392,11 +1422,11 @@
       "state": "unknown",
       "name": "openstack-nova-xvpvncproxy.service"
     },
-    "lldpad.service": {
+    "rhel-autorelabel.service": {
       "status": "enabled",
       "source": "systemd",
-      "state": "running",
-      "name": "lldpad.service"
+      "state": "stopped",
+      "name": "rhel-autorelabel.service"
     },
     "systemd-hibernate.service": {
       "status": "static",
@@ -1404,11 +1434,11 @@
       "state": "unknown",
       "name": "systemd-hibernate.service"
     },
-    "auditd.service": {
-      "status": "enabled",
+    "emergency.service": {
+      "status": "static",
       "source": "systemd",
-      "state": "running",
-      "name": "auditd.service"
+      "state": "stopped",
+      "name": "emergency.service"
     },
     "ovs-vswitchd.service": {
       "status": "static",
@@ -1421,12 +1451,6 @@
       "source": "systemd",
       "state": "running",
       "name": "neutron-metadata-agent.service"
-    },
-    "sysstat.service": {
-      "status": "enabled",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "sysstat.service"
     },
     "systemd-hibernate-resume@.service": {
       "status": "static",
@@ -1452,11 +1476,17 @@
       "state": "unknown",
       "name": "garb.service"
     },
-    "nbd-server.service": {
-      "status": "disabled",
+    "openstack-swift-account.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-account.service"
+    },
+    "systemd-localed.service": {
+      "status": "static",
       "source": "systemd",
       "state": "unknown",
-      "name": "nbd-server.service"
+      "name": "systemd-localed.service"
     },
     "nfslock.service": {
       "status": "static",
@@ -1476,11 +1506,11 @@
       "state": "unknown",
       "name": "dracut-pre-udev.service"
     },
-    "emergency.service": {
-      "status": "static",
+    "openstack-swift-object-auditor@.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "emergency.service"
+      "state": "unknown",
+      "name": "openstack-swift-object-auditor@.service"
     },
     "openstack-nova-novncproxy.service": {
       "status": "enabled",
@@ -1488,11 +1518,11 @@
       "state": "running",
       "name": "openstack-nova-novncproxy.service"
     },
-    "crm_mon.service": {
-      "status": "disabled",
+    "systemd-update-utmp-runlevel.service": {
+      "status": "static",
       "source": "systemd",
-      "state": "unknown",
-      "name": "crm_mon.service"
+      "state": "stopped",
+      "name": "systemd-update-utmp-runlevel.service"
     },
     "pacemaker.service": {
       "status": "enabled",
@@ -1518,35 +1548,29 @@
       "state": "stopped",
       "name": "systemd-binfmt.service"
     },
-    "certmonger.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "certmonger.service"
-    },
     "systemd-readahead-drop.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "unknown",
       "name": "systemd-readahead-drop.service"
     },
-    "NetworkManager-dispatcher.service": {
+    "openstack-swift-object@.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "NetworkManager-dispatcher.service"
+      "name": "openstack-swift-object@.service"
+    },
+    "rdma.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rdma.service"
     },
     "nfs-blkmap.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
       "name": "nfs-blkmap.service"
-    },
-    "autofs.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "autofs.service"
     },
     "systemd-udevd.service": {
       "status": "static",
@@ -1559,6 +1583,12 @@
       "source": "systemd",
       "state": "stopped",
       "name": "rhel-domainname.service"
+    },
+    "rhel-loadmodules.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-loadmodules.service"
     },
     "systemd-bootchart.service": {
       "status": "disabled",
@@ -1578,35 +1608,23 @@
       "state": "unknown",
       "name": "selinux-policy-migrate-local-changes@.service"
     },
-    "lvm2-pvscan@253:1.service": {
-      "status": "unknown",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "lvm2-pvscan@253:1.service"
-    },
-    "atop.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "atop.service"
-    },
     "dbus-org.freedesktop.login1.service": {
       "status": "static",
       "source": "systemd",
       "state": "unknown",
       "name": "dbus-org.freedesktop.login1.service"
     },
+    "openstack-swift-container-reconciler.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-container-reconciler.service"
+    },
     "sshd.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "running",
       "name": "sshd.service"
-    },
-    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_home.service": {
-      "status": "unknown",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_home.service"
     },
     "systemd-remount-fs.service": {
       "status": "static",
@@ -1620,11 +1638,11 @@
       "state": "stopped",
       "name": "iscsid.service"
     },
-    "mysql.service": {
-      "status": "enabled",
+    "openstack-cinder-volume.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "unknown",
-      "name": "mysql.service"
+      "state": "running",
+      "name": "openstack-cinder-volume.service"
     },
     "systemd-journald.service": {
       "status": "static",
@@ -1706,6 +1724,12 @@
       "state": "stopped",
       "name": "sshd-keygen.service"
     },
+    "fstrim.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "fstrim.service"
+    },
     "mariadb@.service": {
       "status": "disabled",
       "source": "systemd",
@@ -1723,6 +1747,12 @@
       "source": "systemd",
       "state": "unknown",
       "name": "dnsmasq.service"
+    },
+    "openstack-swift-object-updater@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-object-updater@.service"
     },
     "neutron-server.service": {
       "status": "enabled",
@@ -1765,12 +1795,6 @@
       "source": "systemd",
       "state": "stopped",
       "name": "systemd-random-seed.service"
-    },
-    "liagentd.service": {
-      "status": "enabled",
-      "source": "systemd",
-      "state": "running",
-      "name": "liagentd.service"
     },
     "atd.service": {
       "status": "enabled",
@@ -1838,6 +1862,12 @@
       "state": "unknown",
       "name": "neutron-destroy-patch-ports.service"
     },
+    "openstack-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-exporter.service"
+    },
     "blk-availability.service": {
       "status": "disabled",
       "source": "systemd",
@@ -1867,6 +1897,12 @@
       "source": "systemd",
       "state": "unknown",
       "name": "nfs-rquotad.service"
+    },
+    "i40e_lldp.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "i40e_lldp.service"
     },
     "dracut-shutdown.service": {
       "status": "static",
@@ -1928,6 +1964,12 @@
       "state": "stopped",
       "name": "nfs-config.service"
     },
+    "openstack-swift-object-expirer.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-object-expirer.service"
+    },
     "openvswitch.service": {
       "status": "enabled",
       "source": "systemd",
@@ -1940,11 +1982,11 @@
       "state": "stopped",
       "name": "systemd-sysctl.service"
     },
-    "fstrim.service": {
-      "status": "static",
+    "openstack-swift-object-replicator@.service": {
+      "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "fstrim.service"
+      "name": "openstack-swift-object-replicator@.service"
     },
     "target.service": {
       "status": "disabled",
@@ -2024,17 +2066,23 @@
       "state": "unknown",
       "name": "rpcidmapd.service"
     },
-    "rhel-dmesg.service": {
-      "status": "enabled",
+    "openstack-swift-account@.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "rhel-dmesg.service"
+      "state": "unknown",
+      "name": "openstack-swift-account@.service"
     },
     "tcsd.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
       "name": "tcsd.service"
+    },
+    "rhel-dmesg.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-dmesg.service"
     },
     "debug-shell.service": {
       "status": "disabled",
@@ -2126,17 +2174,17 @@
       "state": "stopped",
       "name": "iscsiuio.service"
     },
+    "openstack-swift-account-auditor@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-account-auditor@.service"
+    },
     "lvm2-monitor.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "stopped",
       "name": "lvm2-monitor.service"
-    },
-    "prometheus-node-exporter-openstack.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "prometheus-node-exporter-openstack.service"
     },
     "initrd-switch-root.service": {
       "status": "static",
@@ -2162,11 +2210,11 @@
       "state": "unknown",
       "name": "unbound-anchor.service"
     },
-    "zabbix-agent.service": {
+    "openstack-swift-container-auditor.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "running",
-      "name": "zabbix-agent.service"
+      "name": "openstack-swift-container-auditor.service"
     },
     "systemd-modules-load.service": {
       "status": "static",
@@ -2186,11 +2234,17 @@
       "state": "unknown",
       "name": "radvd.service"
     },
-    "nfs.service": {
-      "status": "disabled",
+    "openstack-swift-object.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-object.service"
+    },
+    "systemd-readahead-drop.service": {
+      "status": "enabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "nfs.service"
+      "name": "systemd-readahead-drop.service"
     },
     "memcached.service": {
       "status": "enabled",
@@ -2246,17 +2300,17 @@
       "state": "stopped",
       "name": "NetworkManager-wait-online.service"
     },
-    "rescue.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "rescue.service"
-    },
-    "openstack-exporter.service": {
+    "openstack-swift-object-replicator.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "running",
-      "name": "openstack-exporter.service"
+      "name": "openstack-swift-object-replicator.service"
+    },
+    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_var.service": {
+      "status": "unknown",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_var.service"
     },
     "conntrackd.service": {
       "status": "disabled",
@@ -2270,11 +2324,11 @@
       "state": "unknown",
       "name": "dbus-org.freedesktop.import1.service"
     },
-    "nova-placement.service": {
-      "status": "enabled",
+    "rescue.service": {
+      "status": "static",
       "source": "systemd",
-      "state": "running",
-      "name": "nova-placement.service"
+      "state": "stopped",
+      "name": "rescue.service"
     },
     "node-exporter.service": {
       "status": "enabled",
@@ -2305,6 +2359,12 @@
       "source": "systemd",
       "state": "running",
       "name": "tuned.service"
+    },
+    "lldpd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "lldpd.service"
     },
     "systemd-poweroff.service": {
       "status": "static",
@@ -2348,11 +2408,23 @@
       "state": "unknown",
       "name": "plymouth-switch-root.service"
     },
+    "openstack-swift-account-auditor.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-account-auditor.service"
+    },
     "gssproxy.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "running",
       "name": "gssproxy.service"
+    },
+    "systemd-importd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-importd.service"
     },
     "systemd-fsck-root.service": {
       "status": "static",
@@ -2366,11 +2438,11 @@
       "state": "running",
       "name": "pacemaker.service"
     },
-    "nfs-secure.service": {
-      "status": "static",
+    "openstack-swift-object-auditor.service": {
+      "status": "enabled",
       "source": "systemd",
-      "state": "unknown",
-      "name": "nfs-secure.service"
+      "state": "running",
+      "name": "openstack-swift-object-auditor.service"
     },
     "openstack-nova-scheduler.service": {
       "status": "enabled",
@@ -2384,11 +2456,11 @@
       "state": "stopped",
       "name": "rc-local.service"
     },
-    "systemd-hwdb-update.service": {
-      "status": "static",
+    "openstack-swift-object-reconstructor.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "systemd-hwdb-update.service"
+      "state": "unknown",
+      "name": "openstack-swift-object-reconstructor.service"
     },
     "initrd-parse-etc.service": {
       "status": "static",
@@ -2463,16 +2535,34 @@
       "name": "mysqld.service"
     },
     "rsyncd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rsyncd.service"
+    },
+    "openstack-swift-container@.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "rsyncd.service"
+      "name": "openstack-swift-container@.service"
     },
     "systemd-suspend.service": {
       "status": "static",
       "source": "systemd",
       "state": "unknown",
       "name": "systemd-suspend.service"
+    },
+    "maxscale.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "maxscale.service"
+    },
+    "polkit.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "polkit.service"
     },
     "initrd-cleanup.service": {
       "status": "static",
@@ -2534,11 +2624,11 @@
       "state": "unknown",
       "name": "plymouth-halt.service"
     },
-    "iscsi.service": {
-      "status": "enabled",
+    "nfs-secure.service": {
+      "status": "static",
       "source": "systemd",
-      "state": "stopped",
-      "name": "iscsi.service"
+      "state": "unknown",
+      "name": "nfs-secure.service"
     },
     "neutron-dhcp-agent.service": {
       "status": "enabled",
@@ -2636,6 +2726,12 @@
       "state": "unknown",
       "name": "openstack-cinder-volume.service"
     },
+    "openstack-swift-container-updater@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-container-updater@.service"
+    },
     "dracut-initqueue.service": {
       "status": "static",
       "source": "systemd",
@@ -2647,6 +2743,18 @@
       "source": "systemd",
       "state": "stopped",
       "name": "systemd-udev-trigger.service"
+    },
+    "openstack-swift-container.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-container.service"
+    },
+    "systemd-hwdb-update.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-hwdb-update.service"
     },
     "systemd-ask-password-console.service": {
       "status": "static",
@@ -2708,11 +2816,11 @@
       "state": "unknown",
       "name": "openstack-glance-scrubber.service"
     },
-    "rhel-autorelabel.service": {
-      "status": "enabled",
+    "openstack-swift-container-sync@.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "rhel-autorelabel.service"
+      "state": "unknown",
+      "name": "openstack-swift-container-sync@.service"
     },
     "systemd-update-utmp.service": {
       "status": "static",
@@ -2720,11 +2828,11 @@
       "state": "stopped",
       "name": "systemd-update-utmp.service"
     },
-    "systemd-importd.service": {
-      "status": "static",
+    "wpa_supplicant.service": {
+      "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "systemd-importd.service"
+      "name": "wpa_supplicant.service"
     },
     "telegraf.service": {
       "status": "enabled",
@@ -2768,6 +2876,12 @@
       "state": "stopped",
       "name": "ntpdate.service"
     },
+    "openstack-swift-object-updater.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-object-updater.service"
+    },
     "plymouth-read-write.service": {
       "status": "disabled",
       "source": "systemd",
@@ -2810,6 +2924,12 @@
       "state": "stopped",
       "name": "iscsi-shutdown.service"
     },
+    "openstack-swift-account-reaper.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-account-reaper.service"
+    },
     "rpc-gssd.service": {
       "status": "static",
       "source": "systemd",
@@ -2828,6 +2948,18 @@
       "state": "unknown",
       "name": "plymouth-reboot.service"
     },
+    "openstack-swift-container-replicator.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-container-replicator.service"
+    },
+    "openstack-swift-proxy.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-proxy.service"
+    },
     "systemd-tmpfiles-setup-dev.service": {
       "status": "static",
       "source": "systemd",
@@ -2840,6 +2972,12 @@
       "state": "unknown",
       "name": "autovt@.service"
     },
+    "openstack-swift-account-replicator@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-account-replicator@.service"
+    },
     "rpcbind.service": {
       "status": "disabled",
       "source": "systemd",
@@ -2851,6 +2989,12 @@
       "source": "systemd",
       "state": "unknown",
       "name": "iprupdate.service"
+    },
+    "openstack-swift-container-sync.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-container-sync.service"
     },
     "kmod-static-nodes.service": {
       "status": "static",
@@ -2882,17 +3026,23 @@
       "state": "running",
       "name": "openstack-glance-registry.service"
     },
-    "systemd-fsck@dev-mapper-vg_system\\x2dlvt_var.service": {
-      "status": "unknown",
+    "liagentd.service": {
+      "status": "enabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "systemd-fsck@dev-mapper-vg_system\\x2dlvt_var.service"
+      "state": "running",
+      "name": "liagentd.service"
     },
     "container-getty@.service": {
       "status": "static",
       "source": "systemd",
       "state": "unknown",
       "name": "container-getty@.service"
+    },
+    "zabbix-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "zabbix-agent.service"
     },
     "mysqld-exporter.service": {
       "status": "enabled",
@@ -2912,17 +3062,17 @@
       "state": "stopped",
       "name": "NetworkManager.service"
     },
-    "polkit.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "running",
-      "name": "polkit.service"
-    },
-    "maxscale.service": {
+    "openstack-swift-container-updater.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "running",
-      "name": "maxscale.service"
+      "name": "openstack-swift-container-updater.service"
+    },
+    "prometheus-node-exporter-openstack.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "prometheus-node-exporter-openstack.service"
     },
     "ebtables.service": {
       "status": "disabled",
@@ -2942,6 +3092,12 @@
       "state": "unknown",
       "name": "dracut-pre-trigger.service"
     },
+    "openstack-swift-account-reaper@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-account-reaper@.service"
+    },
     "systemd-hybrid-sleep.service": {
       "status": "static",
       "source": "systemd",
@@ -2960,11 +3116,29 @@
       "state": "running",
       "name": "openstack-nova-conductor.service"
     },
+    "nova-placement.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "nova-placement.service"
+    },
     "kdump.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "stopped",
       "name": "kdump.service"
+    },
+    "openstack-swift-container-replicator@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-container-replicator@.service"
+    },
+    "openstack-swift-container-auditor@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-container-auditor@.service"
     },
     "netconsole-nop.service": {
       "status": "enabled",
@@ -2984,6 +3158,12 @@
       "state": "stopped",
       "name": "systemd-tmpfiles-setup.service"
     },
+    "openstack-swift-account-replicator.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-account-replicator.service"
+    },
     "systemd-fsck@.service": {
       "status": "static",
       "source": "systemd",
@@ -3002,11 +3182,17 @@
       "state": "running",
       "name": "liupdaterd.service"
     },
-    "wpa_supplicant.service": {
+    "openstack-swift-object-reconstructor@.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "wpa_supplicant.service"
+      "name": "openstack-swift-object-reconstructor@.service"
+    },
+    "nfs.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs.service"
     },
     "cgconfig.service": {
       "status": "disabled",
@@ -3020,17 +3206,23 @@
       "state": "unknown",
       "name": "openstack-nova-xvpvncproxy.service"
     },
-    "lldpad.service": {
+    "rhel-autorelabel.service": {
       "status": "enabled",
       "source": "systemd",
-      "state": "running",
-      "name": "lldpad.service"
+      "state": "stopped",
+      "name": "rhel-autorelabel.service"
     },
     "systemd-hibernate.service": {
       "status": "static",
       "source": "systemd",
       "state": "unknown",
       "name": "systemd-hibernate.service"
+    },
+    "emergency.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "emergency.service"
     },
     "auditd.service": {
       "status": "enabled",
@@ -3080,6 +3272,12 @@
       "state": "unknown",
       "name": "garb.service"
     },
+    "openstack-swift-account.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-account.service"
+    },
     "systemd-localed.service": {
       "status": "static",
       "source": "systemd",
@@ -3104,11 +3302,11 @@
       "state": "unknown",
       "name": "dracut-pre-udev.service"
     },
-    "emergency.service": {
-      "status": "static",
+    "openstack-swift-object-auditor@.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "emergency.service"
+      "state": "unknown",
+      "name": "openstack-swift-object-auditor@.service"
     },
     "openstack-nova-novncproxy.service": {
       "status": "enabled",
@@ -3152,11 +3350,17 @@
       "state": "unknown",
       "name": "certmonger.service"
     },
-    "systemd-readahead-drop.service": {
+    "iscsi.service": {
       "status": "enabled",
       "source": "systemd",
+      "state": "stopped",
+      "name": "iscsi.service"
+    },
+    "openstack-swift-object@.service": {
+      "status": "disabled",
+      "source": "systemd",
       "state": "unknown",
-      "name": "systemd-readahead-drop.service"
+      "name": "openstack-swift-object@.service"
     },
     "NetworkManager-dispatcher.service": {
       "status": "disabled",
@@ -3217,6 +3421,12 @@
       "source": "systemd",
       "state": "unknown",
       "name": "dbus-org.freedesktop.login1.service"
+    },
+    "openstack-swift-container-reconciler.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-container-reconciler.service"
     },
     "sshd.service": {
       "status": "enabled",
@@ -3298,6 +3508,12 @@
       "state": "stopped",
       "name": "systemd-machine-id-commit.service"
     },
+    "openstack-dashboard.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-dashboard.service"
+    },
     "iprinit.service": {
       "status": "disabled",
       "source": "systemd",
@@ -3310,17 +3526,17 @@
       "state": "stopped",
       "name": "systemd-readahead-collect.service"
     },
-    "systemd-nspawn@.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "systemd-nspawn@.service"
-    },
     "sshd-keygen.service": {
       "status": "static",
       "source": "systemd",
       "state": "stopped",
       "name": "sshd-keygen.service"
+    },
+    "fstrim.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "fstrim.service"
     },
     "mariadb@.service": {
       "status": "disabled",
@@ -3340,11 +3556,11 @@
       "state": "stopped",
       "name": "systemd-networkd.service"
     },
-    "systemd-update-utmp-runlevel.service": {
-      "status": "static",
+    "openstack-swift-object-updater@.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "systemd-update-utmp-runlevel.service"
+      "state": "unknown",
+      "name": "openstack-swift-object-updater@.service"
     },
     "neutron-server.service": {
       "status": "enabled",
@@ -3370,17 +3586,17 @@
       "state": "stopped",
       "name": "nfs-mountd.service"
     },
+    "iscsi.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "iscsi.service"
+    },
     "systemd-random-seed.service": {
       "status": "static",
       "source": "systemd",
       "state": "stopped",
       "name": "systemd-random-seed.service"
-    },
-    "gssproxy.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "running",
-      "name": "gssproxy.service"
     },
     "saslauthd.service": {
       "status": "disabled",
@@ -3424,17 +3640,17 @@
       "state": "stopped",
       "name": "systemd-shutdownd.service"
     },
-    "openstack-glance-api.service": {
-      "status": "enabled",
-      "source": "systemd",
-      "state": "running",
-      "name": "openstack-glance-api.service"
-    },
-    "neutron-destroy-patch-ports.service": {
+    "plymouth-quit-wait.service": {
       "status": "disabled",
       "source": "systemd",
+      "state": "stopped",
+      "name": "plymouth-quit-wait.service"
+    },
+    "nfs-lock.service": {
+      "status": "static",
+      "source": "systemd",
       "state": "unknown",
-      "name": "neutron-destroy-patch-ports.service"
+      "name": "nfs-lock.service"
     },
     "blk-availability.service": {
       "status": "disabled",
@@ -3448,17 +3664,17 @@
       "state": "unknown",
       "name": "neutron-linuxbridge-agent.service"
     },
-    "netconsole.service": {
-      "status": "masked",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "netconsole.service"
-    },
-    "emergency.service": {
+    "dbus.service": {
       "status": "static",
       "source": "systemd",
-      "state": "stopped",
-      "name": "emergency.service"
+      "state": "running",
+      "name": "dbus.service"
+    },
+    "systemd-hostnamed.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "systemd-hostnamed.service"
     },
     "nfs-rquotad.service": {
       "status": "disabled",
@@ -3466,11 +3682,11 @@
       "state": "unknown",
       "name": "nfs-rquotad.service"
     },
-    "chrony-wait.service": {
-      "status": "disabled",
+    "i40e_lldp.service": {
+      "status": "enabled",
       "source": "systemd",
-      "state": "unknown",
-      "name": "chrony-wait.service"
+      "state": "stopped",
+      "name": "i40e_lldp.service"
     },
     "dracut-shutdown.service": {
       "status": "static",
@@ -3490,11 +3706,11 @@
       "state": "unknown",
       "name": "serial-getty@.service"
     },
-    "rpcbind.service": {
+    "haproxy.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "running",
-      "name": "rpcbind.service"
+      "name": "haproxy.service"
     },
     "arp-ethers.service": {
       "status": "disabled",
@@ -3520,29 +3736,35 @@
       "state": "stopped",
       "name": "systemd-initctl.service"
     },
-    "getty@.service": {
+    "nfs-idmapd.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "nfs-idmapd.service"
+    },
+    "openstack-swift-object-expirer.service": {
       "status": "enabled",
       "source": "systemd",
-      "state": "unknown",
-      "name": "getty@.service"
+      "state": "running",
+      "name": "openstack-swift-object-expirer.service"
     },
     "openvswitch.service": {
-      "status": "disabled",
+      "status": "enabled",
       "source": "systemd",
       "state": "stopped",
       "name": "openvswitch.service"
     },
-    "rdma-load-modules@.service": {
+    "systemd-sysctl.service": {
       "status": "static",
       "source": "systemd",
-      "state": "unknown",
-      "name": "rdma-load-modules@.service"
+      "state": "stopped",
+      "name": "systemd-sysctl.service"
     },
-    "fstrim.service": {
-      "status": "static",
+    "openstack-swift-object-replicator@.service": {
+      "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "fstrim.service"
+      "name": "openstack-swift-object-replicator@.service"
     },
     "target.service": {
       "status": "disabled",
@@ -3592,6 +3814,12 @@
       "state": "running",
       "name": "getty@tty1.service"
     },
+    "systemd-udev-settle.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-udev-settle.service"
+    },
     "rabbitmq-server.service": {
       "status": "enabled",
       "source": "systemd",
@@ -3616,11 +3844,11 @@
       "state": "unknown",
       "name": "rpcidmapd.service"
     },
-    "rhel-dmesg.service": {
-      "status": "enabled",
+    "openstack-swift-account@.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "rhel-dmesg.service"
+      "state": "unknown",
+      "name": "openstack-swift-account@.service"
     },
     "tcsd.service": {
       "status": "disabled",
@@ -3633,6 +3861,18 @@
       "source": "systemd",
       "state": "stopped",
       "name": "regen_ovs.service"
+    },
+    "rhel-dmesg.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rhel-dmesg.service"
+    },
+    "debug-shell.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "debug-shell.service"
     },
     "keystone-public.service": {
       "status": "enabled",
@@ -3657,6 +3897,12 @@
       "source": "systemd",
       "state": "unknown",
       "name": "messagebus.service"
+    },
+    "neutron-l3-agent.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "neutron-l3-agent.service"
     },
     "lvm2-lvmpolld.service": {
       "status": "static",
@@ -3694,17 +3940,23 @@
       "state": "unknown",
       "name": "rsyncd@.service"
     },
-    "systemd-ask-password-console.service": {
+    "systemd-ask-password-plymouth.service": {
       "status": "static",
       "source": "systemd",
       "state": "stopped",
-      "name": "systemd-ask-password-console.service"
+      "name": "systemd-ask-password-plymouth.service"
     },
     "iscsiuio.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "stopped",
       "name": "iscsiuio.service"
+    },
+    "openstack-swift-account-auditor@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-account-auditor@.service"
     },
     "lvm2-monitor.service": {
       "status": "enabled",
@@ -3724,17 +3976,23 @@
       "state": "unknown",
       "name": "neutron-linuxbridge-cleanup.service"
     },
-    "pcsd.service": {
+    "rhel-autorelabel-mark.service": {
       "status": "enabled",
       "source": "systemd",
-      "state": "running",
-      "name": "pcsd.service"
+      "state": "stopped",
+      "name": "rhel-autorelabel-mark.service"
     },
     "unbound-anchor.service": {
       "status": "static",
       "source": "systemd",
       "state": "stopped",
       "name": "unbound-anchor.service"
+    },
+    "openstack-swift-container-auditor.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-container-auditor.service"
     },
     "systemd-modules-load.service": {
       "status": "static",
@@ -3748,11 +4006,11 @@
       "state": "unknown",
       "name": "radvd.service"
     },
-    "nfs.service": {
-      "status": "disabled",
+    "openstack-swift-object.service": {
+      "status": "enabled",
       "source": "systemd",
-      "state": "unknown",
-      "name": "nfs.service"
+      "state": "running",
+      "name": "openstack-swift-object.service"
     },
     "memcached.service": {
       "status": "enabled",
@@ -3778,11 +4036,17 @@
       "state": "running",
       "name": "openstack-cinder-api.service"
     },
-    "crm_mon.service": {
-      "status": "disabled",
+    "postfix.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "postfix.service"
+    },
+    "dbus-org.freedesktop.timedate1.service": {
+      "status": "static",
       "source": "systemd",
       "state": "unknown",
-      "name": "crm_mon.service"
+      "name": "dbus-org.freedesktop.timedate1.service"
     },
     "systemd-tmpfiles-clean.service": {
       "status": "static",
@@ -3802,11 +4066,11 @@
       "state": "running",
       "name": "rsyslog.service"
     },
-    "rescue.service": {
-      "status": "static",
+    "openstack-swift-object-replicator.service": {
+      "status": "enabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "rescue.service"
+      "state": "running",
+      "name": "openstack-swift-object-replicator.service"
     },
     "openstack-exporter.service": {
       "status": "enabled",
@@ -3826,17 +4090,23 @@
       "state": "unknown",
       "name": "dbus-org.freedesktop.import1.service"
     },
-    "nova-placement.service": {
-      "status": "enabled",
+    "rescue.service": {
+      "status": "static",
       "source": "systemd",
-      "state": "running",
-      "name": "nova-placement.service"
+      "state": "stopped",
+      "name": "rescue.service"
     },
     "node-exporter.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "running",
       "name": "node-exporter.service"
+    },
+    "systemd-user-sessions.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-user-sessions.service"
     },
     "systemd-update-done.service": {
       "status": "static",
@@ -3886,11 +4156,11 @@
       "state": "unknown",
       "name": "rdma-ndd.service"
     },
-    "dbus-org.freedesktop.timedate1.service": {
-      "status": "static",
+    "systemd-readahead-replay.service": {
+      "status": "enabled",
       "source": "systemd",
-      "state": "unknown",
-      "name": "dbus-org.freedesktop.timedate1.service"
+      "state": "stopped",
+      "name": "systemd-readahead-replay.service"
     },
     "rpc-statd-notify.service": {
       "status": "static",
@@ -3904,35 +4174,59 @@
       "state": "stopped",
       "name": "plymouth-switch-root.service"
     },
-    "mysqld-exporter.service": {
+    "openstack-swift-account-auditor.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "running",
-      "name": "mysqld-exporter.service"
+      "name": "openstack-swift-account-auditor.service"
     },
-    "dracut-pre-udev.service": {
-      "status": "static",
+    "gssproxy.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "dracut-pre-udev.service"
+      "state": "running",
+      "name": "gssproxy.service"
     },
-    "nfs-secure.service": {
+    "systemd-importd.service": {
       "status": "static",
       "source": "systemd",
       "state": "unknown",
-      "name": "nfs-secure.service"
+      "name": "systemd-importd.service"
     },
-    "debug-shell.service": {
+    "systemd-fsck-root.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-fsck-root.service"
+    },
+    "pacemaker.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "pacemaker.service"
+    },
+    "openstack-swift-object-auditor.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-object-auditor.service"
+    },
+    "openstack-nova-scheduler.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-nova-scheduler.service"
+    },
+    "rc-local.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "rc-local.service"
+    },
+    "openstack-swift-object-reconstructor.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "debug-shell.service"
-    },
-    "systemd-hwdb-update.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "systemd-hwdb-update.service"
+      "name": "openstack-swift-object-reconstructor.service"
     },
     "initrd-parse-etc.service": {
       "status": "static",
@@ -3952,11 +4246,11 @@
       "state": "unknown",
       "name": "neutron-ovs-cleanup.service"
     },
-    "dracut-pre-pivot.service": {
+    "systemd-timedated.service": {
       "status": "static",
       "source": "systemd",
-      "state": "stopped",
-      "name": "dracut-pre-pivot.service"
+      "state": "unknown",
+      "name": "systemd-timedated.service"
     },
     "halt-local.service": {
       "status": "static",
@@ -3994,23 +4288,29 @@
       "state": "unknown",
       "name": "mysqld.service"
     },
-    "selinux-policy-migrate-local-changes@.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "selinux-policy-migrate-local-changes@.service"
-    },
     "rsyncd.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rsyncd.service"
+    },
+    "openstack-swift-container@.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "rsyncd.service"
+      "name": "openstack-swift-container@.service"
     },
     "systemd-suspend.service": {
       "status": "static",
       "source": "systemd",
       "state": "unknown",
       "name": "systemd-suspend.service"
+    },
+    "polkit.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "running",
+      "name": "polkit.service"
     },
     "initrd-cleanup.service": {
       "status": "static",
@@ -4036,11 +4336,11 @@
       "state": "unknown",
       "name": "rpcgssd.service"
     },
-    "openstack-dashboard.service": {
-      "status": "enabled",
+    "selinux-policy-migrate-local-changes@targeted.service": {
+      "status": "unknown",
       "source": "systemd",
-      "state": "running",
-      "name": "openstack-dashboard.service"
+      "state": "stopped",
+      "name": "selinux-policy-migrate-local-changes@targeted.service"
     },
     "neutron-openvswitch-agent.service": {
       "status": "enabled",
@@ -4054,11 +4354,11 @@
       "state": "running",
       "name": "openstack-nova-api.service"
     },
-    "neutron-l3-agent.service": {
+    "getty@.service": {
       "status": "enabled",
       "source": "systemd",
-      "state": "running",
-      "name": "neutron-l3-agent.service"
+      "state": "unknown",
+      "name": "getty@.service"
     },
     "nfs-config.service": {
       "status": "static",
@@ -4072,11 +4372,11 @@
       "state": "unknown",
       "name": "plymouth-halt.service"
     },
-    "iscsi.service": {
-      "status": "enabled",
+    "nfs-secure.service": {
+      "status": "static",
       "source": "systemd",
-      "state": "stopped",
-      "name": "iscsi.service"
+      "state": "unknown",
+      "name": "nfs-secure.service"
     },
     "neutron-dhcp-agent.service": {
       "status": "enabled",
@@ -4096,11 +4396,11 @@
       "state": "stopped",
       "name": "systemd-journal-flush.service"
     },
-    "dbus.service": {
-      "status": "static",
+    "netconsole.service": {
+      "status": "masked",
       "source": "systemd",
-      "state": "running",
-      "name": "dbus.service"
+      "state": "unknown",
+      "name": "netconsole.service"
     },
     "systemd-machined.service": {
       "status": "static",
@@ -4108,11 +4408,11 @@
       "state": "unknown",
       "name": "systemd-machined.service"
     },
-    "systemd-sysctl.service": {
+    "systemd-backlight@.service": {
       "status": "static",
       "source": "systemd",
-      "state": "stopped",
-      "name": "systemd-sysctl.service"
+      "state": "unknown",
+      "name": "systemd-backlight@.service"
     },
     "systemd-networkd-wait-online.service": {
       "status": "disabled",
@@ -4120,23 +4420,17 @@
       "state": "unknown",
       "name": "systemd-networkd-wait-online.service"
     },
-    "systemd-udev-settle.service": {
+    "rdma-load-modules@.service": {
       "status": "static",
       "source": "systemd",
-      "state": "stopped",
-      "name": "systemd-udev-settle.service"
+      "state": "unknown",
+      "name": "rdma-load-modules@.service"
     },
     "nfs-utils.service": {
       "status": "static",
       "source": "systemd",
       "state": "stopped",
       "name": "nfs-utils.service"
-    },
-    "systemd-firstboot.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "systemd-firstboot.service"
     },
     "keystone-admin.service": {
       "status": "enabled",
@@ -4150,11 +4444,11 @@
       "state": "unknown",
       "name": "dbus-org.freedesktop.locale1.service"
     },
-    "haproxy.service": {
-      "status": "enabled",
+    "keepalived.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "running",
-      "name": "haproxy.service"
+      "state": "unknown",
+      "name": "keepalived.service"
     },
     "systemd-reboot.service": {
       "status": "static",
@@ -4168,6 +4462,12 @@
       "state": "unknown",
       "name": "teamd@.service"
     },
+    "openstack-swift-container-updater@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-container-updater@.service"
+    },
     "iscsi-onboot.service": {
       "status": "enabled",
       "source": "systemd",
@@ -4180,11 +4480,23 @@
       "state": "stopped",
       "name": "systemd-udev-trigger.service"
     },
-    "systemd-ask-password-plymouth.service": {
+    "openstack-swift-container.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-container.service"
+    },
+    "systemd-hwdb-update.service": {
       "status": "static",
       "source": "systemd",
       "state": "stopped",
-      "name": "systemd-ask-password-plymouth.service"
+      "name": "systemd-hwdb-update.service"
+    },
+    "systemd-ask-password-console.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "systemd-ask-password-console.service"
     },
     "systemd-logind.service": {
       "status": "static",
@@ -4192,11 +4504,17 @@
       "state": "running",
       "name": "systemd-logind.service"
     },
-    "plymouth-quit-wait.service": {
-      "status": "disabled",
+    "openstack-glance-api.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-glance-api.service"
+    },
+    "dracut-initqueue.service": {
+      "status": "static",
       "source": "systemd",
       "state": "stopped",
-      "name": "plymouth-quit-wait.service"
+      "name": "dracut-initqueue.service"
     },
     "*": {
       "status": "unknown",
@@ -4204,11 +4522,11 @@
       "state": "stopped",
       "name": "*"
     },
-    "nfs-lock.service": {
-      "status": "static",
+    "neutron-destroy-patch-ports.service": {
+      "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "nfs-lock.service"
+      "name": "neutron-destroy-patch-ports.service"
     },
     "ovsdb-server.service": {
       "status": "static",
@@ -4221,12 +4539,6 @@
       "source": "systemd",
       "state": "stopped",
       "name": "plymouth-quit.service"
-    },
-    "keepalived.service": {
-      "status": "disabled",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "keepalived.service"
     },
     "sshd@.service": {
       "status": "static",
@@ -4246,11 +4558,11 @@
       "state": "unknown",
       "name": "openstack-glance-scrubber.service"
     },
-    "rhel-autorelabel.service": {
-      "status": "enabled",
+    "openstack-swift-container-sync@.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "rhel-autorelabel.service"
+      "state": "unknown",
+      "name": "openstack-swift-container-sync@.service"
     },
     "systemd-update-utmp.service": {
       "status": "static",
@@ -4258,11 +4570,11 @@
       "state": "stopped",
       "name": "systemd-update-utmp.service"
     },
-    "systemd-importd.service": {
-      "status": "static",
+    "wpa_supplicant.service": {
+      "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "systemd-importd.service"
+      "name": "wpa_supplicant.service"
     },
     "rhel-readonly.service": {
       "status": "enabled",
@@ -4276,11 +4588,11 @@
       "state": "running",
       "name": "multipathd.service"
     },
-    "systemd-timedated.service": {
+    "dracut-pre-pivot.service": {
       "status": "static",
       "source": "systemd",
-      "state": "unknown",
-      "name": "systemd-timedated.service"
+      "state": "stopped",
+      "name": "dracut-pre-pivot.service"
     },
     "systemd-ask-password-wall.service": {
       "status": "static",
@@ -4300,6 +4612,12 @@
       "state": "running",
       "name": "auditd.service"
     },
+    "openstack-swift-object-updater.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-object-updater.service"
+    },
     "plymouth-read-write.service": {
       "status": "disabled",
       "source": "systemd",
@@ -4312,11 +4630,11 @@
       "state": "running",
       "name": "rpc-statd.service"
     },
-    "rhel-domainname.service": {
+    "pcsd.service": {
       "status": "enabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "rhel-domainname.service"
+      "state": "running",
+      "name": "pcsd.service"
     },
     "lvm2-lvmetad.service": {
       "status": "static",
@@ -4324,11 +4642,23 @@
       "state": "running",
       "name": "lvm2-lvmetad.service"
     },
+    "crm_mon.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "crm_mon.service"
+    },
     "iscsi-shutdown.service": {
       "status": "static",
       "source": "systemd",
       "state": "stopped",
       "name": "iscsi-shutdown.service"
+    },
+    "openstack-swift-account-reaper.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-account-reaper.service"
     },
     "dracut-mount.service": {
       "status": "static",
@@ -4336,17 +4666,35 @@
       "state": "stopped",
       "name": "dracut-mount.service"
     },
-    "systemd-user-sessions.service": {
-      "status": "static",
+    "systemd-nspawn@.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "systemd-user-sessions.service"
+      "state": "unknown",
+      "name": "systemd-nspawn@.service"
     },
     "plymouth-reboot.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
       "name": "plymouth-reboot.service"
+    },
+    "openstack-swift-container-replicator.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-container-replicator.service"
+    },
+    "chrony-wait.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "chrony-wait.service"
+    },
+    "openstack-swift-proxy.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-proxy.service"
     },
     "systemd-tmpfiles-setup-dev.service": {
       "status": "static",
@@ -4360,17 +4708,29 @@
       "state": "unknown",
       "name": "autovt@.service"
     },
-    "nfs-idmapd.service": {
-      "status": "static",
+    "openstack-swift-account-replicator@.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "nfs-idmapd.service"
+      "state": "unknown",
+      "name": "openstack-swift-account-replicator@.service"
+    },
+    "rpcbind.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "rpcbind.service"
     },
     "iprupdate.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
       "name": "iprupdate.service"
+    },
+    "openstack-swift-container-sync.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-container-sync.service"
     },
     "kmod-static-nodes.service": {
       "status": "static",
@@ -4414,17 +4774,23 @@
       "state": "stopped",
       "name": "rpc-gssd.service"
     },
-    "systemd-hostnamed.service": {
+    "container-getty@.service": {
       "status": "static",
       "source": "systemd",
       "state": "unknown",
-      "name": "systemd-hostnamed.service"
+      "name": "container-getty@.service"
     },
-    "openstack-nova-scheduler.service": {
+    "zabbix-agent.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "running",
-      "name": "openstack-nova-scheduler.service"
+      "name": "zabbix-agent.service"
+    },
+    "mysqld-exporter.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "mysqld-exporter.service"
     },
     "console-getty.service": {
       "status": "disabled",
@@ -4432,23 +4798,17 @@
       "state": "unknown",
       "name": "console-getty.service"
     },
-    "rc-local.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "rc-local.service"
-    },
-    "polkit.service": {
-      "status": "static",
+    "openstack-swift-container-updater.service": {
+      "status": "enabled",
       "source": "systemd",
       "state": "running",
-      "name": "polkit.service"
+      "name": "openstack-swift-container-updater.service"
     },
-    "selinux-policy-migrate-local-changes@targeted.service": {
-      "status": "unknown",
+    "prometheus-node-exporter-openstack.service": {
+      "status": "static",
       "source": "systemd",
       "state": "stopped",
-      "name": "selinux-policy-migrate-local-changes@targeted.service"
+      "name": "prometheus-node-exporter-openstack.service"
     },
     "chronyd.service": {
       "status": "enabled",
@@ -4462,17 +4822,17 @@
       "state": "stopped",
       "name": "httpd.service"
     },
-    "container-getty@.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "container-getty@.service"
-    },
-    "systemd-fsck-root.service": {
+    "dracut-pre-trigger.service": {
       "status": "static",
       "source": "systemd",
       "state": "stopped",
-      "name": "systemd-fsck-root.service"
+      "name": "dracut-pre-trigger.service"
+    },
+    "openstack-swift-account-reaper@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-account-reaper@.service"
     },
     "systemd-hybrid-sleep.service": {
       "status": "static",
@@ -4492,11 +4852,29 @@
       "state": "running",
       "name": "openstack-nova-conductor.service"
     },
+    "nova-placement.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "nova-placement.service"
+    },
     "kdump.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "stopped",
       "name": "kdump.service"
+    },
+    "openstack-swift-container-replicator@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-container-replicator@.service"
+    },
+    "openstack-swift-container-auditor@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-container-auditor@.service"
     },
     "netconsole-nop.service": {
       "status": "enabled",
@@ -4522,6 +4900,12 @@
       "state": "unknown",
       "name": "dbus-org.freedesktop.network1.service"
     },
+    "openstack-swift-account-replicator.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-account-replicator.service"
+    },
     "systemd-fsck@.service": {
       "status": "static",
       "source": "systemd",
@@ -4534,11 +4918,17 @@
       "state": "unknown",
       "name": "openstack-nova-metadata-api.service"
     },
-    "wpa_supplicant.service": {
+    "openstack-swift-object-reconstructor@.service": {
       "status": "disabled",
       "source": "systemd",
       "state": "unknown",
-      "name": "wpa_supplicant.service"
+      "name": "openstack-swift-object-reconstructor@.service"
+    },
+    "nfs.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "nfs.service"
     },
     "dnsmasq.service": {
       "status": "disabled",
@@ -4552,17 +4942,23 @@
       "state": "unknown",
       "name": "openstack-nova-xvpvncproxy.service"
     },
-    "dracut-pre-trigger.service": {
-      "status": "static",
+    "rhel-autorelabel.service": {
+      "status": "enabled",
       "source": "systemd",
       "state": "stopped",
-      "name": "dracut-pre-trigger.service"
+      "name": "rhel-autorelabel.service"
     },
     "systemd-hibernate.service": {
       "status": "static",
       "source": "systemd",
       "state": "unknown",
       "name": "systemd-hibernate.service"
+    },
+    "emergency.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "emergency.service"
     },
     "ovs-vswitchd.service": {
       "status": "static",
@@ -4600,6 +4996,12 @@
       "state": "unknown",
       "name": "garb.service"
     },
+    "openstack-swift-account.service": {
+      "status": "enabled",
+      "source": "systemd",
+      "state": "running",
+      "name": "openstack-swift-account.service"
+    },
     "systemd-localed.service": {
       "status": "static",
       "source": "systemd",
@@ -4618,23 +5020,35 @@
       "state": "unknown",
       "name": "plymouth-poweroff.service"
     },
+    "dracut-pre-udev.service": {
+      "status": "static",
+      "source": "systemd",
+      "state": "stopped",
+      "name": "dracut-pre-udev.service"
+    },
+    "openstack-swift-object-auditor@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-object-auditor@.service"
+    },
     "openstack-nova-novncproxy.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "running",
       "name": "openstack-nova-novncproxy.service"
     },
-    "postfix.service": {
-      "status": "enabled",
+    "systemd-update-utmp-runlevel.service": {
+      "status": "static",
       "source": "systemd",
-      "state": "running",
-      "name": "postfix.service"
+      "state": "stopped",
+      "name": "systemd-update-utmp-runlevel.service"
     },
-    "pacemaker.service": {
-      "status": "enabled",
+    "lvm2-pvscan@253:2.service": {
+      "status": "unknown",
       "source": "systemd",
-      "state": "running",
-      "name": "pacemaker.service"
+      "state": "stopped",
+      "name": "lvm2-pvscan@253:2.service"
     },
     "htcacheclean.service": {
       "status": "static",
@@ -4648,12 +5062,6 @@
       "state": "unknown",
       "name": "quotaon.service"
     },
-    "systemd-backlight@.service": {
-      "status": "static",
-      "source": "systemd",
-      "state": "unknown",
-      "name": "systemd-backlight@.service"
-    },
     "systemd-binfmt.service": {
       "status": "static",
       "source": "systemd",
@@ -4665,6 +5073,12 @@
       "source": "systemd",
       "state": "unknown",
       "name": "systemd-readahead-drop.service"
+    },
+    "openstack-swift-object@.service": {
+      "status": "disabled",
+      "source": "systemd",
+      "state": "unknown",
+      "name": "openstack-swift-object@.service"
     },
     "rdma.service": {
       "status": "disabled",
@@ -4684,11 +5098,11 @@
       "state": "running",
       "name": "systemd-udevd.service"
     },
-    "systemd-readahead-replay.service": {
+    "rhel-domainname.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "stopped",
-      "name": "systemd-readahead-replay.service"
+      "name": "rhel-domainname.service"
     },
     "rhel-loadmodules.service": {
       "status": "enabled",
@@ -4708,11 +5122,11 @@
       "state": "unknown",
       "name": "openstack-cinder-backup.service"
     },
-    "prometheus-node-exporter-openstack.service": {
+    "selinux-policy-migrate-local-changes@.service": {
       "status": "static",
       "source": "systemd",
-      "state": "stopped",
-      "name": "prometheus-node-exporter-openstack.service"
+      "state": "unknown",
+      "name": "selinux-policy-migrate-local-changes@.service"
     },
     "dbus-org.freedesktop.login1.service": {
       "status": "static",
@@ -4720,23 +5134,17 @@
       "state": "unknown",
       "name": "dbus-org.freedesktop.login1.service"
     },
-    "rhel-autorelabel-mark.service": {
-      "status": "enabled",
+    "openstack-swift-container-reconciler.service": {
+      "status": "disabled",
       "source": "systemd",
-      "state": "stopped",
-      "name": "rhel-autorelabel-mark.service"
+      "state": "unknown",
+      "name": "openstack-swift-container-reconciler.service"
     },
     "sshd.service": {
       "status": "enabled",
       "source": "systemd",
       "state": "running",
       "name": "sshd.service"
-    },
-    "lvm2-pvscan@253:2.service": {
-      "status": "unknown",
-      "source": "systemd",
-      "state": "stopped",
-      "name": "lvm2-pvscan@253:2.service"
     },
     "systemd-remount-fs.service": {
       "status": "static",
@@ -4775,16 +5183,16 @@
       "name": "dbus-org.freedesktop.hostname1.service"
     },
     "corosync.service": {
-      "status": "disabled",
+      "status": "enabled",
       "source": "systemd",
       "state": "running",
       "name": "corosync.service"
     },
-    "dracut-initqueue.service": {
+    "systemd-firstboot.service": {
       "status": "static",
       "source": "systemd",
       "state": "stopped",
-      "name": "dracut-initqueue.service"
+      "name": "systemd-firstboot.service"
     },
     "irqbalance.service": {
       "status": "enabled",
