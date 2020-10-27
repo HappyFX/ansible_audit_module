@@ -5,7 +5,7 @@ Exmaple reports from `playbook/audit_pckg/.report`:
 1. [packages](https://htmlpreview.github.io/?https://github.com/HappyFX/ansible_audit_module/blob/master/playbook/audit_pckg/reports/html/packages.html)
 1. [services](https://htmlpreview.github.io/?https://github.com/HappyFX/ansible_audit_module/blob/master/playbook/audit_pckg/reports/html/services.html)
 1. [system](https://htmlpreview.github.io/?https://github.com/HappyFX/ansible_audit_module/blob/master/playbook/audit_pckg/reports/html/system.html)
-1. [mount](https://htmlpreview.github.io/?https://github.com/HappyFX/ansible_audit_module/blob/master/playbook/audit_pckg/reports/html/mount.html)
+1. [mount](https://htmlpreview.github.io/?https://github.com/HappyFX/ansible_audit_module/blob/master/playbook/audit_pckg/reports/html/mounts.html)
 
 ## How to run
 
@@ -36,6 +36,10 @@ Output of module is dict
     compare_facts:
       services: "{{ my_services }}"
       packages: "{{ my_packages }}"
+      mounts: "{{ my_mounts }}"
+      mounts_filter:
+        - /
+        - /boot
       system: "{{ my_system }}"
       dest_raw: "{{ audit_pckg_folder_json_raw }}"
       dest_result: "{{ audit_pckg_folder_json_result }}"
@@ -54,6 +58,7 @@ Json from facts
     set_fact:
       my_services: "{{ my_services | default ({}) | combine( { item: hostvars[item].ansible_facts.services} ) }}"
       my_packages: "{{ my_packages | default ({}) | combine( { item: hostvars[item].ansible_facts.packages} ) }}"
+      my_mounts: "{{ my_mounts | default ({}) | combine( { item: hostvars[item].ansible_mounts} ) }}"
       my_system: "{{ my_system | default ({}) | combine( { item: {hostvars[item].ansible_distribution: hostvars[item].ansible_distribution_version} }) }}"
     delegate_to: localhost
     run_once: True
@@ -66,6 +71,7 @@ Json from facts
 Output raw json to path
 * [example raw packages](playbook/audit_pckg/reports/json_raw/raw_packages.json)
 * [example raw services](playbook/audit_pckg/reports/json_raw/raw_services.json)
+* [example raw mounts](playbook/audit_pckg/reports/json_raw/raw_mounts.json)
 * [example raw system](playbook/audit_pckg/reports/json_raw/raw_system.json)
 
 #### dest_result
